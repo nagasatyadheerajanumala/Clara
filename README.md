@@ -14,3 +14,4 @@ The official website for Clara - Your Intelligent Calendar Assistant.
 ## Hosting
 
 Hosted on GitHub Pages with custom domain.
+
