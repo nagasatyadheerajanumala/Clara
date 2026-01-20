@@ -882,6 +882,48 @@ body {
     color: var(--text-muted);
 }
 
+.stat-source {
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.stat-source:hover {
+    transform: translateY(-2px);
+}
+
+.stat-source:hover .stat-value {
+    color: var(--primary-dark);
+}
+
+.stat-source:hover .stat-cite {
+    color: var(--primary);
+}
+
+.stat-cite {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+    transition: color 0.2s ease;
+}
+
+.stat-cite::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background: var(--primary);
+    transition: width 0.2s ease;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.stat-source:hover .stat-cite::after {
+    width: 20px;
+}
+
 /* Solution Intro */
 .solution-intro {
     padding: 100px 24px 60px;
