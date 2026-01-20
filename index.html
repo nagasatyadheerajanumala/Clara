@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clara - AI-Powered Life Intelligence</title>
+    <title>Clara - AI-Powered Life Intelligence | Master Your Time</title>
     <meta name="description" content="Clara is your AI-powered life intelligence platform. Unify your calendars, health data, and daily routines into actionable insights that help you live better.">
-    <meta name="keywords" content="AI calendar, smart scheduling, work-life balance, health tracking, productivity app">
+    <meta name="keywords" content="AI calendar, smart scheduling, work-life balance, health tracking, productivity app, time management, AllTime">
     <meta property="og:title" content="Clara - AI-Powered Life Intelligence">
     <meta property="og:description" content="Your AI companion for mastering time, energy, and life balance.">
     <meta property="og:type" content="website">
@@ -20,6 +20,7 @@
     <!-- Animated Background -->
     <div class="bg-gradient"></div>
     <div class="bg-grid"></div>
+    <canvas id="particles"></canvas>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -31,10 +32,14 @@
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#mission">Mission</a></li>
-                <li><a href="/support">Support</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
-            <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="nav-cta">Download Free</a>
+            <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="nav-cta">
+                <span class="cta-pulse"></span>
+                Download Free
+            </a>
         </div>
     </nav>
 
@@ -46,88 +51,92 @@
                 AI-Powered Life Intelligence
             </div>
             <h1 class="hero-title">
-                Your Time is Your Life.<br>
-                <span class="gradient-text">Master Both.</span>
+                <span class="title-line">Your Time is</span>
+                <span class="title-line">Your Life.</span>
+                <span class="title-line gradient-text typing-text">Master Both.</span>
             </h1>
             <p class="hero-subtitle">
                 Clara is the AI companion that understands your calendar, health, and energy levels
-                to help you make smarter decisions about how you spend your most precious resource: time.
+                to help you make smarter decisions about how you spend your most precious resource: <strong>time</strong>.
             </p>
             <div class="hero-cta-group">
-                <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="btn btn-primary btn-large">
+                <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="btn btn-primary btn-large glow-effect">
                     <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
-                    Download for iOS
+                    Download for iOS - It's Free
                 </a>
-                <a href="#features" class="btn btn-secondary btn-large">
-                    See How It Works
-                    <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                <a href="#demo" class="btn btn-secondary btn-large">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
                     </svg>
+                    Watch Demo
                 </a>
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">10K+</span>
-                    <span class="stat-label">Active Users</span>
+            <div class="hero-trust">
+                <div class="trust-avatars">
+                    <img src="https://i.pravatar.cc/40?img=1" alt="User" class="trust-avatar">
+                    <img src="https://i.pravatar.cc/40?img=2" alt="User" class="trust-avatar">
+                    <img src="https://i.pravatar.cc/40?img=3" alt="User" class="trust-avatar">
+                    <img src="https://i.pravatar.cc/40?img=4" alt="User" class="trust-avatar">
+                    <span class="trust-more">+10K</span>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">4.9</span>
-                    <span class="stat-label">App Store Rating</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">1M+</span>
-                    <span class="stat-label">Events Analyzed</span>
+                <div class="trust-text">
+                    <div class="trust-stars">★★★★★</div>
+                    <span>Loved by 10,000+ users</span>
                 </div>
             </div>
         </div>
         <div class="hero-visual">
-            <div class="phone-mockup">
-                <div class="phone-screen">
-                    <div class="app-header">
-                        <span class="app-greeting">Good Morning, Sarah</span>
-                        <span class="app-date">Monday, January 20</span>
-                    </div>
-                    <div class="app-card insight-card">
-                        <div class="insight-icon">💡</div>
-                        <div class="insight-content">
-                            <span class="insight-title">AI Insight</span>
-                            <span class="insight-text">You have a 2-hour focus window at 2pm. Perfect for deep work on your project.</span>
+            <div class="phone-wrapper">
+                <div class="phone-glow"></div>
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="app-header">
+                            <span class="app-greeting">Good Morning, Sarah</span>
+                            <span class="app-date">Monday, January 20</span>
                         </div>
-                    </div>
-                    <div class="app-card event-card">
-                        <div class="event-time">9:00 AM</div>
-                        <div class="event-details">
-                            <span class="event-title">Team Standup</span>
-                            <span class="event-meta">Google Meet • 30 min</span>
-                        </div>
-                    </div>
-                    <div class="app-card event-card">
-                        <div class="event-time">11:00 AM</div>
-                        <div class="event-details">
-                            <span class="event-title">Product Review</span>
-                            <span class="event-meta">Conference Room B • 1 hr</span>
-                        </div>
-                    </div>
-                    <div class="app-card health-card">
-                        <div class="health-stats">
-                            <div class="health-item">
-                                <span class="health-icon">😴</span>
-                                <span class="health-value">7.5h</span>
-                                <span class="health-label">Sleep</span>
+                        <div class="app-card insight-card">
+                            <div class="insight-icon">💡</div>
+                            <div class="insight-content">
+                                <span class="insight-title">AI Insight</span>
+                                <span class="insight-text">You have a 2-hour focus window at 2pm. Perfect for deep work.</span>
                             </div>
-                            <div class="health-item">
-                                <span class="health-icon">🚶</span>
-                                <span class="health-value">6,420</span>
-                                <span class="health-label">Steps</span>
+                        </div>
+                        <div class="app-card event-card">
+                            <div class="event-time">9:00 AM</div>
+                            <div class="event-details">
+                                <span class="event-title">Team Standup</span>
+                                <span class="event-meta">Google Meet • 30 min</span>
                             </div>
-                            <div class="health-item">
-                                <span class="health-icon">⚡</span>
-                                <span class="health-value">82%</span>
-                                <span class="health-label">Energy</span>
+                            <div class="event-indicator google"></div>
+                        </div>
+                        <div class="app-card event-card">
+                            <div class="event-time">11:00 AM</div>
+                            <div class="event-details">
+                                <span class="event-title">Product Review</span>
+                                <span class="event-meta">Conference Room B • 1 hr</span>
+                            </div>
+                            <div class="event-indicator outlook"></div>
+                        </div>
+                        <div class="app-card health-card">
+                            <div class="health-stats">
+                                <div class="health-item">
+                                    <span class="health-icon">😴</span>
+                                    <span class="health-value">7.5h</span>
+                                    <span class="health-label">Sleep</span>
+                                </div>
+                                <div class="health-item">
+                                    <span class="health-icon">🚶</span>
+                                    <span class="health-value">6,420</span>
+                                    <span class="health-label">Steps</span>
+                                </div>
+                                <div class="health-item">
+                                    <span class="health-icon">⚡</span>
+                                    <span class="health-value">82%</span>
+                                    <span class="health-label">Energy</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,6 +155,75 @@
                     <span class="fc-icon">💪</span>
                     <span class="fc-text">Balance score: 85</span>
                 </div>
+                <div class="floating-card card-4">
+                    <span class="fc-icon">🔔</span>
+                    <span class="fc-text">Smart reminder sent</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-icon">📅</span>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="1000000">0</span>
+                        <span class="stat-label">Events Analyzed</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon">⏰</span>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="50000">0</span>
+                        <span class="stat-label">Hours Saved</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon">🧠</span>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="500000">0</span>
+                        <span class="stat-label">AI Insights Delivered</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon">⭐</span>
+                    <div class="stat-content">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">App Store Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Cloud -->
+    <section class="logo-cloud">
+        <div class="container">
+            <p class="logo-cloud-title">Seamlessly integrates with your favorite tools</p>
+            <div class="logo-row">
+                <div class="logo-item">
+                    <svg viewBox="0 0 24 24" fill="#4285F4"><path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0zm.14 19.018c-3.868 0-7-3.14-7-7.018c0-3.878 3.132-7.018 7-7.018c1.89 0 3.47.697 4.682 1.829l-1.974 1.978v-.004c-.735-.702-1.667-1.062-2.708-1.062c-2.31 0-4.187 1.956-4.187 4.273c0 2.315 1.877 4.277 4.187 4.277c2.096 0 3.522-1.202 3.816-2.852H12.14v-2.737h6.585c.088.47.135.96.135 1.474c0 4.01-2.677 6.86-6.72 6.86z"/></svg>
+                    <span>Google Calendar</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 24 24" fill="#0078D4"><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.623h11.377V24H0zm12.623 0H24V24H12.623z"/></svg>
+                    <span>Outlook</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 24 24" fill="#333"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <span>Apple Calendar</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 24 24" fill="#FF2D55"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    <span>Apple Health</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 24 24" fill="#34A853"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Google Tasks</span>
+                </div>
             </div>
         </div>
     </section>
@@ -155,169 +233,207 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">The Problem</span>
-                <h2 class="section-title">Your Calendar Doesn't Know You</h2>
+                <h2 class="section-title">Your Calendar is <span class="strikethrough">Broken</span></h2>
                 <p class="section-subtitle">
-                    Traditional calendars show what's scheduled. They don't understand your energy,
-                    your health, or how to help you thrive.
+                    Traditional calendars are just appointment books. They don't understand your energy,
+                    your health, or what you actually need to thrive.
                 </p>
             </div>
             <div class="problem-grid">
                 <div class="problem-card">
                     <div class="problem-icon">😵</div>
                     <h3>Meeting Overload</h3>
-                    <p>Back-to-back meetings drain your energy with no time to think or recharge.</p>
+                    <p>Back-to-back meetings drain your energy with no time to think, process, or recharge between calls.</p>
+                    <div class="problem-stat">
+                        <span class="stat-value">67%</span>
+                        <span class="stat-desc">of workers feel overwhelmed by meetings</span>
+                    </div>
                 </div>
                 <div class="problem-card">
                     <div class="problem-icon">🔀</div>
-                    <h3>Scattered Tools</h3>
-                    <p>Your calendar, health apps, and to-dos live in silos that don't talk to each other.</p>
+                    <h3>Scattered Chaos</h3>
+                    <p>Your work calendar, personal calendar, health apps, and to-dos all live in separate silos.</p>
+                    <div class="problem-stat">
+                        <span class="stat-value">5+</span>
+                        <span class="stat-desc">apps used daily to manage time</span>
+                    </div>
                 </div>
                 <div class="problem-card">
                     <div class="problem-icon">🤷</div>
-                    <h3>No Context</h3>
-                    <p>Your calendar doesn't know you slept poorly or that you're in a high-energy window.</p>
+                    <h3>Zero Context</h3>
+                    <p>Your calendar doesn't know you slept poorly, feel stressed, or that you're in a creative flow state.</p>
+                    <div class="problem-stat">
+                        <span class="stat-value">0</span>
+                        <span class="stat-desc">insights from traditional calendars</span>
+                    </div>
                 </div>
                 <div class="problem-card">
                     <div class="problem-icon">⏰</div>
                     <h3>Reactive Living</h3>
-                    <p>You react to your schedule instead of designing a life that works for you.</p>
+                    <p>You react to your schedule instead of intentionally designing days that align with your goals.</p>
+                    <div class="problem-stat">
+                        <span class="stat-value">2.5h</span>
+                        <span class="stat-desc">wasted daily on poor scheduling</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Solution Section -->
-    <section class="solution-section" id="features">
+    <!-- Solution Intro -->
+    <section class="solution-intro" id="features">
         <div class="container">
-            <div class="section-header">
+            <div class="solution-intro-content">
                 <span class="section-badge">The Solution</span>
-                <h2 class="section-title">Intelligence That <span class="gradient-text">Understands You</span></h2>
-                <p class="section-subtitle">
-                    Clara connects everything—your calendars, health data, and daily patterns—to give you
-                    AI-powered insights that help you make better decisions.
+                <h2 class="mega-title">
+                    Meet Clara<span class="sparkle">✨</span>
+                </h2>
+                <p class="mega-subtitle">
+                    The AI that doesn't just show your schedule—it <em>understands</em> you.
+                    Clara connects your calendars, health data, and daily patterns to help you
+                    live and work at your best.
                 </p>
             </div>
-            <div class="features-showcase">
-                <div class="feature-large">
-                    <div class="feature-visual">
-                        <div class="feature-demo unified-view">
-                            <div class="calendar-icon google">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0zm.14 19.018c-3.868 0-7-3.14-7-7.018c0-3.878 3.132-7.018 7-7.018c1.89 0 3.47.697 4.682 1.829l-1.974 1.978v-.004c-.735-.702-1.667-1.062-2.708-1.062c-2.31 0-4.187 1.956-4.187 4.273c0 2.315 1.877 4.277 4.187 4.277c2.096 0 3.522-1.202 3.816-2.852H12.14v-2.737h6.585c.088.47.135.96.135 1.474c0 4.01-2.677 6.86-6.72 6.86z"/></svg>
-                            </div>
-                            <div class="calendar-icon microsoft">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.623h11.377V24H0zm12.623 0H24V24H12.623z"/></svg>
-                            </div>
-                            <div class="calendar-icon apple">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                            </div>
-                            <div class="unified-arrow">→</div>
-                            <div class="unified-result">
-                                <span class="unified-icon">✨</span>
-                                <span class="unified-text">One Intelligent View</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feature-content">
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features-grid-section">
+        <div class="container">
+            <div class="features-bento">
+                <!-- Large Feature Card -->
+                <div class="bento-card bento-large unified-feature">
+                    <div class="bento-content">
                         <span class="feature-badge">Unified Calendar</span>
-                        <h3>All Your Calendars. One Smart View.</h3>
-                        <p>
-                            Connect Google, Microsoft Outlook, and Apple Calendar. Clara merges them
-                            into a single intelligent timeline that shows you what matters.
-                        </p>
-                        <ul class="feature-list">
-                            <li>Automatic sync across all accounts</li>
-                            <li>Smart conflict detection</li>
-                            <li>Color-coded event categories</li>
+                        <h3>All Your Calendars.<br>One Intelligent View.</h3>
+                        <p>Connect Google, Microsoft Outlook, and Apple Calendar. Clara merges them into a single timeline with smart conflict detection.</p>
+                        <ul class="feature-checklist">
+                            <li>Real-time sync across all accounts</li>
+                            <li>Automatic conflict detection</li>
+                            <li>Color-coded by calendar source</li>
+                            <li>Works offline, syncs when connected</li>
                         </ul>
                     </div>
-                </div>
-
-                <div class="feature-large reverse">
-                    <div class="feature-visual">
-                        <div class="feature-demo ai-insights">
-                            <div class="ai-message">
-                                <div class="ai-avatar">🤖</div>
-                                <div class="ai-bubble">
-                                    <p class="ai-text">"You've had 12 hours of meetings this week. Consider blocking Friday afternoon for deep work."</p>
-                                    <div class="ai-actions">
-                                        <button class="ai-action">Block Time</button>
-                                        <button class="ai-action secondary">Remind Later</button>
-                                    </div>
-                                </div>
+                    <div class="bento-visual">
+                        <div class="calendar-merge-animation">
+                            <div class="merge-icon google-cal">
+                                <svg viewBox="0 0 24 24" fill="#4285F4"><path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
                             </div>
-                            <div class="ai-metrics">
-                                <div class="metric">
-                                    <span class="metric-label">Meeting Load</span>
-                                    <div class="metric-bar"><div class="metric-fill" style="width: 75%"></div></div>
-                                    <span class="metric-value">75%</span>
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-label">Focus Time</span>
-                                    <div class="metric-bar"><div class="metric-fill low" style="width: 25%"></div></div>
-                                    <span class="metric-value">25%</span>
-                                </div>
+                            <div class="merge-icon outlook-cal">
+                                <svg viewBox="0 0 24 24" fill="#0078D4"><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.623h11.377V24H0zm12.623 0H24V24H12.623z"/></svg>
+                            </div>
+                            <div class="merge-icon apple-cal">
+                                <svg viewBox="0 0 24 24" fill="#333"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83z"/></svg>
+                            </div>
+                            <div class="merge-arrow">→</div>
+                            <div class="merge-result">
+                                <span class="merge-logo">✨</span>
+                                <span class="merge-text">Clara</span>
                             </div>
                         </div>
                     </div>
-                    <div class="feature-content">
-                        <span class="feature-badge">AI Insights</span>
-                        <h3>Personalized Intelligence. Daily.</h3>
-                        <p>
-                            Clara analyzes your patterns and delivers actionable insights—not generic
-                            productivity tips. Real recommendations based on your actual life.
-                        </p>
-                        <ul class="feature-list">
-                            <li>Daily briefings tailored to you</li>
-                            <li>Weekly pattern analysis</li>
-                            <li>Proactive scheduling suggestions</li>
-                        </ul>
+                </div>
+
+                <!-- AI Insights Card -->
+                <div class="bento-card bento-medium ai-feature">
+                    <span class="feature-badge">AI Insights</span>
+                    <h3>Your Personal AI Analyst</h3>
+                    <p>Clara analyzes your patterns and delivers actionable insights—not generic tips.</p>
+                    <div class="ai-chat-demo">
+                        <div class="ai-message-demo">
+                            <span class="ai-avatar-mini">🤖</span>
+                            <div class="ai-bubble-demo">
+                                "You've had 14 hours of meetings this week. That's 40% more than usual. Want me to protect some focus time?"
+                            </div>
+                        </div>
+                        <div class="ai-quick-actions">
+                            <button class="ai-quick-btn">Block 2 hours</button>
+                            <button class="ai-quick-btn secondary">Show analysis</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feature-large">
-                    <div class="feature-visual">
-                        <div class="feature-demo health-integration">
-                            <div class="health-ring">
-                                <svg viewBox="0 0 120 120" class="ring-svg">
-                                    <circle cx="60" cy="60" r="54" class="ring-bg"/>
-                                    <circle cx="60" cy="60" r="54" class="ring-fill" style="stroke-dashoffset: 85"/>
-                                </svg>
-                                <div class="ring-content">
-                                    <span class="ring-value">78</span>
-                                    <span class="ring-label">Energy Score</span>
-                                </div>
+                <!-- Health Integration Card -->
+                <div class="bento-card bento-medium health-feature">
+                    <span class="feature-badge">Health Integration</span>
+                    <h3>Your Body Knows Best</h3>
+                    <p>Connect Apple Health to factor sleep, activity, and recovery into your scheduling.</p>
+                    <div class="health-preview">
+                        <div class="energy-ring">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="42" class="ring-track"/>
+                                <circle cx="50" cy="50" r="42" class="ring-progress"/>
+                            </svg>
+                            <div class="energy-value">
+                                <span class="energy-number">78</span>
+                                <span class="energy-label">Energy</span>
                             </div>
-                            <div class="health-factors">
-                                <div class="factor">
-                                    <span class="factor-icon">😴</span>
-                                    <span class="factor-name">Sleep</span>
-                                    <span class="factor-value good">7.2h</span>
-                                </div>
-                                <div class="factor">
-                                    <span class="factor-icon">🏃</span>
-                                    <span class="factor-name">Activity</span>
-                                    <span class="factor-value good">8,421 steps</span>
-                                </div>
-                                <div class="factor">
-                                    <span class="factor-icon">❤️</span>
-                                    <span class="factor-name">HRV</span>
-                                    <span class="factor-value medium">52ms</span>
-                                </div>
+                        </div>
+                        <div class="health-metrics">
+                            <div class="metric-row">
+                                <span>😴 Sleep</span>
+                                <span class="metric-good">7.2h</span>
+                            </div>
+                            <div class="metric-row">
+                                <span>🏃 Activity</span>
+                                <span class="metric-good">8,421</span>
+                            </div>
+                            <div class="metric-row">
+                                <span>❤️ HRV</span>
+                                <span class="metric-medium">52ms</span>
                             </div>
                         </div>
                     </div>
-                    <div class="feature-content">
-                        <span class="feature-badge">Health Integration</span>
-                        <h3>Your Body Knows Best. Clara Listens.</h3>
-                        <p>
-                            Connect Apple Health to factor sleep, activity, and recovery into your
-                            scheduling. Clara knows when you're at your peak—and when you need rest.
-                        </p>
-                        <ul class="feature-list">
-                            <li>Sleep quality impacts suggestions</li>
-                            <li>Energy-aware scheduling</li>
-                            <li>Recovery time recommendations</li>
-                        </ul>
+                </div>
+
+                <!-- Smart Scheduling Card -->
+                <div class="bento-card bento-small">
+                    <div class="small-card-icon">🎯</div>
+                    <h4>Smart Scheduling</h4>
+                    <p>AI suggests optimal times based on your energy and preferences</p>
+                </div>
+
+                <!-- Focus Time Card -->
+                <div class="bento-card bento-small">
+                    <div class="small-card-icon">🧘</div>
+                    <h4>Focus Protection</h4>
+                    <p>Automatically block time for deep work when you need it most</p>
+                </div>
+
+                <!-- Daily Briefing Card -->
+                <div class="bento-card bento-small">
+                    <div class="small-card-icon">☀️</div>
+                    <h4>Daily Briefing</h4>
+                    <p>Start each day with a personalized summary of what's ahead</p>
+                </div>
+
+                <!-- Meeting Prep Card -->
+                <div class="bento-card bento-small">
+                    <div class="small-card-icon">📋</div>
+                    <h4>Meeting Prep</h4>
+                    <p>Get context and prep materials before every meeting</p>
+                </div>
+
+                <!-- Pattern Recognition Card -->
+                <div class="bento-card bento-wide pattern-feature">
+                    <div class="pattern-content">
+                        <span class="feature-badge">Weekly Patterns</span>
+                        <h3>See Your Week Like Never Before</h3>
+                        <p>Clara identifies patterns in your schedule, revealing insights about how you actually spend your time versus how you want to.</p>
+                    </div>
+                    <div class="pattern-visual">
+                        <div class="week-chart">
+                            <div class="day-bar" style="--height: 60%"><span>Mon</span></div>
+                            <div class="day-bar" style="--height: 85%"><span>Tue</span></div>
+                            <div class="day-bar" style="--height: 70%"><span>Wed</span></div>
+                            <div class="day-bar" style="--height: 90%"><span>Thu</span></div>
+                            <div class="day-bar" style="--height: 45%"><span>Fri</span></div>
+                        </div>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="legend-dot meetings"></span>Meetings</span>
+                            <span class="legend-item"><span class="legend-dot focus"></span>Focus</span>
+                            <span class="legend-item"><span class="legend-dot free"></span>Free</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -329,28 +445,252 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">How It Works</span>
-                <h2 class="section-title">Three Steps to a Better Life</h2>
+                <h2 class="section-title">Get Started in 60 Seconds</h2>
+                <p class="section-subtitle">No complicated setup. No learning curve. Just connect and go.</p>
             </div>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">🔗</div>
-                    <h3>Connect</h3>
-                    <p>Link your calendars and health apps in seconds. Clara securely syncs everything.</p>
+            <div class="steps-timeline">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon-large">📲</div>
+                    <h3>Download Clara</h3>
+                    <p>Free on the App Store. No credit card required, no trials—just download and start.</p>
                 </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">🧠</div>
-                    <h3>Learn</h3>
-                    <p>Clara's AI analyzes your patterns, energy levels, and preferences to understand you.</p>
+                <div class="step-connector-line"></div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon-large">🔗</div>
+                    <h3>Connect Your Apps</h3>
+                    <p>Link your calendars and Apple Health with one tap. Secure OAuth—we never see your passwords.</p>
                 </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">🚀</div>
-                    <h3>Thrive</h3>
-                    <p>Get daily insights and recommendations that help you make the most of every day.</p>
+                <div class="step-connector-line"></div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon-large">🚀</div>
+                    <h3>Let Clara Learn</h3>
+                    <p>Within 24 hours, Clara understands your patterns and starts delivering personalized insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Clara</span>
+                <h2 class="section-title">Not Just Another Calendar App</h2>
+            </div>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-feature">Feature</div>
+                    <div class="comparison-them">Traditional Apps</div>
+                    <div class="comparison-us">Clara AI</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span class="feature-name">Multiple Calendar Sync</span>
+                    </div>
+                    <div class="comparison-them">
+                        <span class="partial">Partial</span>
+                    </div>
+                    <div class="comparison-us">
+                        <span class="check">✓</span>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span class="feature-name">Health Data Integration</span>
+                    </div>
+                    <div class="comparison-them">
+                        <span class="no">✗</span>
+                    </div>
+                    <div class="comparison-us">
+                        <span class="check">✓</span>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span class="feature-name">AI-Powered Insights</span>
+                    </div>
+                    <div class="comparison-them">
+                        <span class="no">✗</span>
+                    </div>
+                    <div class="comparison-us">
+                        <span class="check">✓</span>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span class="feature-name">Energy-Aware Scheduling</span>
+                    </div>
+                    <div class="comparison-them">
+                        <span class="no">✗</span>
+                    </div>
+                    <div class="comparison-us">
+                        <span class="check">✓</span>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span class="feature-name">Automatic Focus Blocking</span>
+                    </div>
+                    <div class="comparison-them">
+                        <span class="no">✗</span>
+                    </div>
+                    <div class="comparison-us">
+                        <span class="check">✓</span>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span class="feature-name">Personalized Daily Briefings</span>
+                    </div>
+                    <div class="comparison-them">
+                        <span class="no">✗</span>
+                    </div>
+                    <div class="comparison-us">
+                        <span class="check">✓</span>
+                    </div>
+                </div>
+                <div class="comparison-row highlight">
+                    <div class="comparison-feature">
+                        <span class="feature-name">Price</span>
+                    </div>
+                    <div class="comparison-them">
+                        <span class="price">$5-15/mo</span>
+                    </div>
+                    <div class="comparison-us">
+                        <span class="free-badge">FREE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Reviews</span>
+                <h2 class="section-title">Loved by Thousands</h2>
+                <p class="section-subtitle">See what people are saying about Clara</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card featured">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Clara changed how I think about my calendar. It's not just appointments anymore—it's a tool that actually helps me live better. The health integration is genius."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=11" alt="Sarah M." class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Sarah M.</span>
+                            <span class="author-role">Product Manager at Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Finally, an app that gets it. I used to have 3 different calendar apps. Now I just have Clara."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=12" alt="James K." class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">James K.</span>
+                            <span class="author-role">Startup Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The AI insights are scarily accurate. It told me I was burning out before I even realized it."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=13" alt="Emily R." class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Emily R.</span>
+                            <span class="author-role">Engineering Lead</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I've tried every productivity app. Clara is the first one I've stuck with for more than a month."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=14" alt="Michael T." class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Michael T.</span>
+                            <span class="author-role">Creative Director</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"As a freelancer, my schedule is chaos. Clara helps me see patterns I never noticed and actually plan for energy, not just time."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=15" alt="Lisa P." class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Lisa P.</span>
+                            <span class="author-role">Freelance Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The focus time blocking feature alone is worth it. My productivity has never been higher."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=16" alt="David W." class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">David W.</span>
+                            <span class="author-role">Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="privacy-section">
+        <div class="container">
+            <div class="privacy-content">
+                <div class="privacy-text">
+                    <span class="section-badge">Privacy First</span>
+                    <h2>Your Data Stays Yours</h2>
+                    <p>We take privacy seriously. Your calendar and health data are encrypted end-to-end. We never sell your data, and you can delete everything at any time.</p>
+                    <ul class="privacy-list">
+                        <li>
+                            <span class="privacy-icon">🔒</span>
+                            <div>
+                                <strong>End-to-End Encryption</strong>
+                                <span>Your data is encrypted in transit and at rest</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="privacy-icon">🚫</span>
+                            <div>
+                                <strong>No Data Selling</strong>
+                                <span>We will never sell your personal information</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="privacy-icon">🗑️</span>
+                            <div>
+                                <strong>Delete Anytime</strong>
+                                <span>One-click deletion of all your data</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="privacy-icon">📱</span>
+                            <div>
+                                <strong>On-Device Processing</strong>
+                                <span>Sensitive data processed locally when possible</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="privacy-visual">
+                    <div class="shield-container">
+                        <div class="shield-glow"></div>
+                        <div class="shield-icon">🛡️</div>
+                        <div class="shield-text">Protected</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -362,16 +702,13 @@
             <div class="mission-content">
                 <span class="section-badge light">Our Mission</span>
                 <h2 class="mission-title">
-                    We believe your time is the most valuable thing you have.
+                    Time is the only resource you can never get back.
                 </h2>
                 <p class="mission-text">
-                    Most productivity tools treat you like a machine—optimizing for output at the expense of wellbeing.
-                    Clara is different. We built an AI that understands you're human. One that considers your
-                    energy, your health, and your life outside of work.
+                    We started Clara because we were tired of feeling like our calendars controlled us instead of the other way around. Most productivity tools treat you like a machine—optimizing for output at the expense of wellbeing.
                 </p>
                 <p class="mission-text">
-                    Our mission is simple: help you spend your time on what matters most—so you can
-                    live a life you're proud of, not just a calendar that's fully booked.
+                    Clara is different. We built an AI that understands you're human. One that considers your energy, your health, and your life outside of work. Our mission is to help you spend your time on what matters most—so you can live a life you're proud of, not just a calendar that's fully booked.
                 </p>
                 <div class="mission-values">
                     <div class="value">
@@ -386,6 +723,46 @@
                         <span class="value-icon">🔒</span>
                         <span class="value-text">Privacy First</span>
                     </div>
+                    <div class="value">
+                        <span class="value-icon">💚</span>
+                        <span class="value-text">Human-Centered AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Common Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Is Clara really free?</h3>
+                    <p class="faq-answer">Yes! Clara is completely free to use. We believe everyone deserves smart scheduling tools, not just those who can afford premium subscriptions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Which calendars does Clara support?</h3>
+                    <p class="faq-answer">Clara integrates with Google Calendar, Microsoft Outlook, and Apple Calendar. You can connect multiple accounts from each provider.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How does the health integration work?</h3>
+                    <p class="faq-answer">Clara connects to Apple Health to read your sleep, steps, and heart rate variability. This data helps Clara understand your energy levels and make better scheduling suggestions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is my data secure?</h3>
+                    <p class="faq-answer">Absolutely. All data is encrypted in transit and at rest. We use OAuth for calendar connections (we never see your passwords), and you can delete your data at any time.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Does Clara work offline?</h3>
+                    <p class="faq-answer">Yes! Your calendar is cached locally, so you can view your schedule offline. Changes sync automatically when you're back online.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is there an Android version?</h3>
+                    <p class="faq-answer">Clara is currently iOS-only, but we're working on Android. Join our waitlist to be notified when it's available.</p>
                 </div>
             </div>
         </div>
@@ -395,15 +772,20 @@
     <section class="final-cta">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Master Your Time?</h2>
-                <p>Join thousands of people who are taking control of their calendars and their lives.</p>
-                <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="btn btn-primary btn-large">
+                <div class="cta-badge">Ready to Transform Your Time?</div>
+                <h2>Start Living Intentionally Today</h2>
+                <p>Join thousands of people who are taking control of their calendars—and their lives.</p>
+                <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="btn btn-primary btn-xlarge glow-effect">
                     <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
                     Download Free on App Store
                 </a>
-                <p class="cta-note">Free to use. No credit card required.</p>
+                <div class="cta-features">
+                    <span>✓ Free forever</span>
+                    <span>✓ No credit card</span>
+                    <span>✓ Setup in 60 seconds</span>
+                </div>
             </div>
         </div>
     </section>
@@ -418,12 +800,18 @@
                         <span class="logo-text">Clara</span>
                     </a>
                     <p>AI-powered life intelligence for people who value their time.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
                 </div>
                 <div class="footer-links-group">
                     <h4>Product</h4>
                     <ul>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498">Download</a></li>
                     </ul>
                 </div>
@@ -451,6 +839,59 @@
     </footer>
 
     <script>
+        // Particle Animation
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        function createParticle() {
+            return {
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 2 + 0.5,
+                speedX: (Math.random() - 0.5) * 0.5,
+                speedY: (Math.random() - 0.5) * 0.5,
+                opacity: Math.random() * 0.5 + 0.2
+            };
+        }
+
+        function initParticles() {
+            particles = [];
+            for (let i = 0; i < 50; i++) {
+                particles.push(createParticle());
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.x += p.speedX;
+                p.y += p.speedY;
+
+                if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(99, 102, 241, ${p.opacity})`;
+                ctx.fill();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        resizeCanvas();
+        initParticles();
+        animateParticles();
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            initParticles();
+        });
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -486,8 +927,60 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.feature-large, .step, .problem-card, .mission-content').forEach(el => {
+        document.querySelectorAll('.bento-card, .step-card, .problem-card, .testimonial-card, .faq-item, .mission-content, .privacy-content, .comparison-row').forEach(el => {
             observer.observe(el);
+        });
+
+        // Animated counter for stats
+        function animateCounter(el) {
+            const target = parseInt(el.getAttribute('data-target'));
+            if (!target) return;
+
+            const duration = 2000;
+            const start = 0;
+            const startTime = performance.now();
+
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+
+                // Easing function
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(start + (target - start) * easeOut);
+
+                el.textContent = current.toLocaleString() + '+';
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+
+            requestAnimationFrame(update);
+        }
+
+        // Trigger counter animation when stats banner is visible
+        const statsBanner = document.querySelector('.stats-banner');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.stat-number[data-target]').forEach(el => {
+                        animateCounter(el);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (statsBanner) {
+            statsObserver.observe(statsBanner);
+        }
+
+        // FAQ accordion (optional - can be expanded)
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
         });
     </script>
 </body>
