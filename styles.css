@@ -1,32 +1,61 @@
-/* Clara AI - Super Modern Website Styles */
+/* Clara - Time Intelligence System
+   Color Palette: Deep Teal + Warm Coral
+   Sophisticated, warm, human-centered */
 
 :root {
-    --primary: #6366F1;
-    --primary-dark: #4F46E5;
-    --primary-light: #818CF8;
-    --primary-glow: rgba(99, 102, 241, 0.5);
-    --secondary: #0EA5E9;
-    --accent: #F59E0B;
+    /* Primary: Deep Teal - Trust, Intelligence, Calm */
+    --primary: #0D9488;
+    --primary-dark: #0F766E;
+    --primary-light: #14B8A6;
+    --primary-glow: rgba(13, 148, 136, 0.4);
+
+    /* Accent: Warm Coral - Energy, Action, Human Warmth */
+    --accent: #F97316;
+    --accent-light: #FB923C;
+    --accent-dark: #EA580C;
+
+    /* Secondary: Deep Slate - Sophistication, Grounding */
+    --secondary: #334155;
+    --secondary-light: #475569;
+
+    /* Semantic Colors */
     --success: #10B981;
+    --warning: #FBBF24;
     --error: #EF4444;
+
+    /* Text */
     --text: #0F172A;
     --text-secondary: #475569;
     --text-muted: #94A3B8;
+
+    /* Backgrounds */
     --background: #FFFFFF;
     --background-alt: #F8FAFC;
-    --background-dark: #0F172A;
+    --background-warm: #FFFBEB;
+    --background-dark: #134E4A;
+    --background-darker: #0F3D3A;
+
+    /* Borders & Cards */
     --border: #E2E8F0;
-    --card-bg: rgba(255, 255, 255, 0.8);
-    --gradient-primary: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
-    --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    --border-teal: rgba(13, 148, 136, 0.2);
+    --card-bg: rgba(255, 255, 255, 0.9);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #0D9488 0%, #0891B2 50%, #0E7490 100%);
+    --gradient-warm: linear-gradient(135deg, #F97316 0%, #FB923C 50%, #FBBF24 100%);
+    --gradient-hero: linear-gradient(135deg, #134E4A 0%, #0F766E 50%, #0D9488 100%);
+    --gradient-dark: linear-gradient(135deg, #134E4A 0%, #0F3D3A 100%);
+    --gradient-coral: linear-gradient(135deg, #EA580C 0%, #F97316 100%);
+
+    /* Shadows */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.3);
-    --shadow-glow-lg: 0 0 60px rgba(99, 102, 241, 0.4);
+    --shadow-glow: 0 0 40px rgba(13, 148, 136, 0.3);
+    --shadow-glow-lg: 0 0 60px rgba(13, 148, 136, 0.4);
+    --shadow-coral: 0 0 40px rgba(249, 115, 22, 0.3);
 }
 
 * {
@@ -71,7 +100,7 @@ body {
     left: 0;
     right: 0;
     height: 100vh;
-    background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 50%, #f8fafc 100%);
+    background: linear-gradient(180deg, #f8fafc 0%, #F0FDFA 50%, #f8fafc 100%);
     z-index: -3;
 }
 
@@ -82,8 +111,8 @@ body {
     right: 0;
     height: 100vh;
     background-image:
-        linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+        linear-gradient(rgba(13, 148, 136, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(13, 148, 136, 0.04) 1px, transparent 1px);
     background-size: 60px 60px;
     z-index: -2;
 }
@@ -2359,7 +2388,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1e 100%);
+    background: linear-gradient(180deg, #134E4A 0%, #0F3D3A 100%);
 }
 
 .clara-avatar {
@@ -2414,17 +2443,17 @@ body {
 }
 
 .clara-prescription {
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(249, 115, 22, 0.15);
     border-radius: 10px;
     padding: 12px;
-    border-left: 3px solid var(--primary);
+    border-left: 3px solid var(--accent);
     margin-bottom: 12px;
 }
 
 .prescription-label {
     font-size: 9px;
     font-weight: 700;
-    color: var(--primary-light);
+    color: var(--accent-light);
     letter-spacing: 1px;
     display: block;
     margin-bottom: 6px;
@@ -2498,7 +2527,7 @@ body {
 }
 
 .research-card.featured {
-    background: linear-gradient(135deg, #1a1a2e 0%, #2d1f4e 100%);
+    background: var(--gradient-dark);
     color: white;
     grid-row: span 2;
 }
@@ -2528,7 +2557,7 @@ body {
 }
 
 .research-card.featured .research-stat {
-    background: linear-gradient(135deg, #818CF8 0%, #C084FC 100%);
+    background: var(--gradient-warm);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2565,10 +2594,10 @@ body {
 .research-conclusion {
     margin-top: 48px;
     padding: 40px;
-    background: linear-gradient(135deg, #EEF2FF 0%, #F5F3FF 100%);
+    background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%);
     border-radius: 24px;
     text-align: center;
-    border: 2px solid rgba(99, 102, 241, 0.2);
+    border: 2px solid var(--border-teal);
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s, transform 0.6s;
@@ -2603,7 +2632,7 @@ body {
    SAY NO FEATURE DEMO
    ================================================ */
 .say-no-feature {
-    background: linear-gradient(135deg, #1a1a2e 0%, #2d1f4e 100%) !important;
+    background: var(--gradient-dark) !important;
 }
 
 .say-no-feature h3,
@@ -2612,7 +2641,7 @@ body {
 }
 
 .say-no-feature .feature-badge.critical {
-    background: linear-gradient(135deg, #EF4444 0%, #F97316 100%);
+    background: var(--gradient-coral);
     color: white;
 }
 
@@ -2687,7 +2716,7 @@ body {
 }
 
 .sn-message {
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(13, 148, 136, 0.1);
     border-radius: 10px;
     padding: 14px;
     margin-bottom: 16px;
@@ -2788,8 +2817,8 @@ body {
 .impact-text {
     font-size: 12px;
     font-weight: 600;
-    color: var(--text);
-    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary-dark);
+    background: rgba(13, 148, 136, 0.1);
     padding: 6px 12px;
     border-radius: 6px;
     display: inline-block;
@@ -2862,7 +2891,7 @@ body {
 }
 
 .voice-card.clara-voice {
-    background: linear-gradient(135deg, #1a1a2e 0%, #2d1f4e 100%);
+    background: var(--gradient-dark);
     color: white;
     box-shadow: var(--shadow-glow-lg);
 }
@@ -2923,7 +2952,7 @@ body {
 }
 
 .voice-card.clara-voice .voice-verdict {
-    color: var(--primary-light);
+    color: var(--accent-light);
 }
 
 /* ================================================
