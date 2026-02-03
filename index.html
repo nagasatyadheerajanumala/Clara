@@ -10,7 +10,7 @@
     <meta property="og:description" content="Stop surviving your calendar. Clara tells you what to decline, plans your day, and protects your time.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://theclaraai.com">
-    <link rel="stylesheet" href="styles.css?v=3.2">
+    <link rel="stylesheet" href="styles.css?v=3.3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -650,24 +650,22 @@
     </footer>
 
     <script>
-        // Page Load Animation
+        // Page Load Animation - fast and minimal
         window.addEventListener('load', () => {
             const loader = document.getElementById('pageLoader');
             const progress = document.querySelector('.loader-progress');
 
-            // Animate progress bar
+            // Quick progress animation
             progress.style.width = '100%';
 
-            // Hide loader after animation
+            // Hide loader quickly
             setTimeout(() => {
                 loader.classList.add('fade-out');
                 document.body.classList.remove('loading');
-
-                // Remove loader from DOM after transition
                 setTimeout(() => {
                     loader.style.display = 'none';
-                }, 500);
-            }, 800);
+                }, 300);
+            }, 300);
         });
 
         // Scroll animations with stagger

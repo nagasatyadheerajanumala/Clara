@@ -120,11 +120,12 @@ body.loading {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--teal-900) 0%, var(--teal-800) 100%);
+    background: var(--slate-50);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     transition: opacity 0.5s var(--ease-out), visibility 0.5s;
 }
 
@@ -138,16 +139,20 @@ body.loading {
 }
 
 .loader-logo {
-    margin-bottom: var(--space-lg);
-    animation: pulse-scale 1.5s ease-in-out infinite;
+    margin-bottom: var(--space-md);
 }
 
 .logo-mark.large {
-    width: 80px;
-    height: 80px;
-    font-size: 36px;
-    background: linear-gradient(135deg, var(--teal-400) 0%, var(--teal-300) 100%);
-    border-radius: 20px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    background: var(--teal-700);
+    color: white;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,18 +162,16 @@ body.loading {
 }
 
 .loader-text {
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    margin-bottom: var(--space-xl);
-    opacity: 0;
-    animation: fade-in 0.5s ease-out 0.3s forwards;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--teal-800);
+    margin-bottom: var(--space-md);
 }
 
 .loader-bar {
-    width: 200px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 120px;
+    height: 3px;
+    background: var(--slate-200);
     border-radius: 2px;
     overflow: hidden;
     margin: 0 auto;
@@ -177,9 +180,9 @@ body.loading {
 .loader-progress {
     height: 100%;
     width: 0;
-    background: linear-gradient(90deg, var(--teal-400), var(--coral-400));
+    background: var(--teal-600);
     border-radius: 2px;
-    transition: width 0.8s var(--ease-out);
+    transition: width 0.4s var(--ease-out);
 }
 
 @keyframes pulse-scale {
