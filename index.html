@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clara | Your Time Protection Agent</title>
-    <meta name="description" content="Clara diagnoses your overload, tells you what to decline, and protects your time using health data. Not a calendar—a decision engine.">
-    <meta name="keywords" content="time intelligence, burnout prevention, work-life balance, calendar AI, meeting overload">
-    <meta property="og:title" content="Clara | Your Time Protection Agent">
-    <meta property="og:description" content="Stop surviving your calendar. Clara tells you what to decline, when to protect, and how to reclaim your time.">
+    <title>Clara | Your AI Time Intelligence Agent</title>
+    <meta name="description" content="Clara diagnoses your overload, tells you what to decline, plans your day with AI, and protects your time using health data. Not a calendar—a decision engine.">
+    <meta name="keywords" content="time intelligence, AI calendar, burnout prevention, work-life balance, calendar AI, meeting overload, day planning">
+    <meta property="og:title" content="Clara | Your AI Time Intelligence Agent">
+    <meta property="og:description" content="Stop surviving your calendar. Clara tells you what to decline, plans your day, and protects your time.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://theclaraai.com">
-    <link rel="stylesheet" href="styles.css?v=2.0">
+    <link rel="stylesheet" href="styles.css?v=3.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
-<body>
+<body class="loading">
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <div class="logo-mark large">C</div>
+            </div>
+            <div class="loader-text">Clara</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="noise"></div>
 
     <!-- Navigation -->
@@ -28,8 +41,8 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#problem">Problem</a></li>
-                <li><a href="#solution">Solution</a></li>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#clara-ai">Clara AI</a></li>
                 <li><a href="#science">Research</a></li>
             </ul>
             <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="nav-cta">
@@ -44,7 +57,7 @@
             <div class="hero-content">
                 <div class="hero-eyebrow" data-animate="fade-up" data-delay="0">
                     <span class="eyebrow-dot"></span>
-                    Time Intelligence System
+                    AI Time Intelligence
                 </div>
 
                 <h1 class="hero-title">
@@ -54,8 +67,8 @@
                 </h1>
 
                 <p class="hero-description" data-animate="fade-up" data-delay="400">
-                    Clara reads your calendar and health data to diagnose overload before you feel it.
-                    She tells you exactly which meeting to decline—and writes the message for you.
+                    Clara is your AI-powered time protection agent. She reads your calendar and health data,
+                    diagnoses overload, tells you what to decline, and plans your day—all through conversation.
                 </p>
 
                 <div class="hero-ctas" data-animate="fade-up" data-delay="500">
@@ -65,8 +78,8 @@
                         </svg>
                         Download Free
                     </a>
-                    <a href="#problem" class="btn-ghost">
-                        Learn more
+                    <a href="#features" class="btn-ghost">
+                        See all features
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
                         </svg>
@@ -158,7 +171,7 @@
                 <div class="problem-card" data-animate="fade-up" data-delay="100">
                     <div class="problem-number">01</div>
                     <h3>Meeting Overload</h3>
-                    <p>Meetings have tripled since 2020. 76% of workers feel drained on meeting-heavy days.</p>
+                    <p>Meetings have tripled since 2020. Your calendar keeps booking without asking if you can handle it.</p>
                     <div class="problem-stat">
                         <span class="big">3x</span>
                         <span class="small">more meetings</span>
@@ -198,78 +211,187 @@
         </div>
     </section>
 
-    <!-- Solution Section -->
-    <section class="solution-section" id="solution">
+    <!-- Clara AI Section (NEW) -->
+    <section class="clara-ai-section" id="clara-ai">
         <div class="container">
-            <div class="solution-intro">
-                <div class="section-label light" data-animate="fade-up">The Solution</div>
-                <h2 class="section-title light large" data-animate="fade-up" data-delay="100">
-                    Meet Clara.
-                </h2>
-                <p class="section-desc light" data-animate="fade-up" data-delay="200">
-                    Not a calendar app. A time protection agent that diagnoses problems,
-                    prescribes actions, and tells you exactly what to do.
-                </p>
+            <div class="section-label light" data-animate="fade-up">Your AI Assistant</div>
+            <h2 class="section-title light large" data-animate="fade-up" data-delay="100">
+                Meet Clara.
+            </h2>
+            <p class="section-desc light centered" data-animate="fade-up" data-delay="200">
+                Talk to Clara like a friend. She knows your calendar, your health, your patterns.
+                Ask her anything. She'll tell you exactly what to do.
+            </p>
+
+            <div class="clara-demo-container" data-animate="fade-up" data-delay="300">
+                <div class="chat-demo">
+                    <div class="chat-header">
+                        <div class="chat-avatar">
+                            <div class="avatar-glow"></div>
+                            <span>C</span>
+                        </div>
+                        <div class="chat-header-info">
+                            <span class="chat-name">Clara</span>
+                            <span class="chat-status">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages">
+                        <div class="chat-message user">
+                            <p>Should I take that 3pm meeting?</p>
+                        </div>
+                        <div class="chat-message clara">
+                            <p>I'd skip it. Here's why:</p>
+                            <div class="clara-insight-card">
+                                <div class="insight-row">
+                                    <span class="insight-icon">📅</span>
+                                    <span>You already have 5 meetings today (4.5 hours)</span>
+                                </div>
+                                <div class="insight-row">
+                                    <span class="insight-icon">😴</span>
+                                    <span>5.5h sleep means -20% cognitive capacity</span>
+                                </div>
+                                <div class="insight-row">
+                                    <span class="insight-icon">⏰</span>
+                                    <span>3pm is usually your energy dip</span>
+                                </div>
+                            </div>
+                            <p class="clara-recommendation">I wrote a decline message for you. Want me to send it?</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-suggestions">
+                        <button class="suggestion-chip">Plan my day</button>
+                        <button class="suggestion-chip">What should I focus on?</button>
+                        <button class="suggestion-chip">How's my week looking?</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="solution-features">
-                <div class="feature-card main" data-animate="fade-up" data-delay="100">
-                    <div class="feature-content">
-                        <div class="feature-label">Core Feature</div>
-                        <h3>The "Say No" Engine</h3>
-                        <p>Clara analyzes your capacity and tells you which meeting to decline. Then she writes the message for you.</p>
-                    </div>
+            <div class="clara-capabilities" data-animate="fade-up" data-delay="400">
+                <div class="capability">
+                    <div class="capability-icon">🗓️</div>
+                    <span>Calendar</span>
+                </div>
+                <div class="capability">
+                    <div class="capability-icon">❤️</div>
+                    <span>Health</span>
+                </div>
+                <div class="capability">
+                    <div class="capability-icon">✅</div>
+                    <span>Tasks</span>
+                </div>
+                <div class="capability">
+                    <div class="capability-icon">📊</div>
+                    <span>Insights</span>
+                </div>
+                <div class="capability">
+                    <div class="capability-icon">🎯</div>
+                    <span>Focus</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="decline-demo">
-                        <div class="decline-header">
-                            <span class="decline-badge">DECLINE SUGGESTION</span>
-                            <span class="decline-confidence">High confidence</span>
+    <!-- Features Grid Section (NEW - Comprehensive) -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-label" data-animate="fade-up">Everything Clara Does</div>
+            <h2 class="section-title" data-animate="fade-up" data-delay="100">
+                A complete time intelligence system.
+            </h2>
+
+            <div class="features-grid">
+                <!-- Core Feature: Say No Engine -->
+                <div class="feature-item featured" data-animate="fade-up" data-delay="100">
+                    <div class="feature-badge">Core Feature</div>
+                    <div class="feature-icon-large">🛑</div>
+                    <h3>The "Say No" Engine</h3>
+                    <p>Clara analyzes your capacity and tells you which meeting to decline. Then she writes the message for you—professional and guilt-free.</p>
+                    <div class="feature-demo-small">
+                        <div class="decline-preview">
+                            <span class="decline-badge-small">DECLINE</span>
+                            <span class="decline-meeting-small">2pm Product Review</span>
                         </div>
-                        <div class="decline-meeting">
-                            <span class="meeting-time">2:00 PM</span>
-                            <span class="meeting-name">Product Review</span>
-                        </div>
-                        <div class="decline-reason">
-                            <strong>Why:</strong> You're at 6h of meetings. This pushes you past capacity. 3 back-to-backs before this.
-                        </div>
-                        <div class="decline-message">
-                            <div class="message-label">Ready to send:</div>
-                            <p>"I need to decline—I have back-to-back commitments and won't give this proper attention. Can we find time Thursday?"</p>
-                        </div>
-                        <button class="copy-btn" id="copyBtn">Copy Message</button>
+                        <p class="decline-msg-small">"I need to decline—I have back-to-back commitments and won't give this proper attention."</p>
                     </div>
                 </div>
 
-                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                <!-- Plan My Day -->
+                <div class="feature-item" data-animate="fade-up" data-delay="150">
+                    <div class="feature-icon">📋</div>
+                    <h3>Plan My Day</h3>
+                    <p>One tap and Clara creates your optimal daily schedule—prioritizing deep work, protecting focus time, and suggesting when to take breaks.</p>
+                </div>
+
+                <!-- Health Integration -->
+                <div class="feature-item" data-animate="fade-up" data-delay="200">
                     <div class="feature-icon">❤️</div>
                     <h3>Health × Calendar</h3>
-                    <p>Clara reads your sleep, HRV, and activity from Apple Health. Bad sleep? She reduces your capacity and warns you.</p>
-                    <div class="health-indicators">
-                        <div class="indicator bad">
-                            <span>😴 5.5h sleep</span>
-                            <span class="impact">→ -20% capacity</span>
-                        </div>
-                        <div class="indicator warning">
-                            <span>❤️ HRV 32ms</span>
-                            <span class="impact">→ Recovery needed</span>
-                        </div>
-                    </div>
+                    <p>Clara reads sleep, HRV, steps, and activity from Apple Health. Bad sleep? She adjusts your capacity and warns you before you crash.</p>
                 </div>
 
-                <div class="feature-card" data-animate="fade-up" data-delay="300">
+                <!-- Weekly Insights -->
+                <div class="feature-item" data-animate="fade-up" data-delay="250">
                     <div class="feature-icon">📊</div>
-                    <h3>Pattern Detection</h3>
-                    <p>Clara analyzes 30-60 days and reveals patterns you can't see. Weekend work creep. Tuesday overload.</p>
-                    <div class="pattern-example">
-                        <span class="pattern-icon">⚠️</span>
-                        <span class="pattern-text">"This is the 3rd Sunday with work. A month ago it was zero."</span>
-                    </div>
+                    <h3>Weekly Insights</h3>
+                    <p>See patterns you can't see. Meeting load trends, energy distribution, work-life balance scores, and AI-generated recommendations.</p>
                 </div>
 
-                <div class="feature-card" data-animate="fade-up" data-delay="400">
+                <!-- Morning Briefing -->
+                <div class="feature-item" data-animate="fade-up" data-delay="300">
+                    <div class="feature-icon">🌅</div>
+                    <h3>Morning Briefing</h3>
+                    <p>Wake up to Clara's personalized summary. "6 meetings today, but I found a 90-minute focus window at 2pm. Protect it."</p>
+                </div>
+
+                <!-- Evening Summary -->
+                <div class="feature-item" data-animate="fade-up" data-delay="350">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Evening Summary</h3>
+                    <p>End your day with reflection. Clara tells you what you accomplished, what rolled over, and how to set up tomorrow for success.</p>
+                </div>
+
+                <!-- Focus Protection -->
+                <div class="feature-item" data-animate="fade-up" data-delay="400">
                     <div class="feature-icon">🎯</div>
                     <h3>Focus Protection</h3>
-                    <p>Clara finds your best deep work windows and blocks them. One tap to protect 2 hours.</p>
+                    <p>Clara finds your best deep work windows and blocks them. One tap to protect 2 hours of uninterrupted time.</p>
+                </div>
+
+                <!-- Pattern Detection -->
+                <div class="feature-item" data-animate="fade-up" data-delay="450">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Pattern Detection</h3>
+                    <p>Clara analyzes 30-60 days and reveals patterns you can't see. Weekend work creep. Tuesday overload. Thursday energy dips.</p>
+                </div>
+
+                <!-- Life Wheel -->
+                <div class="feature-item" data-animate="fade-up" data-delay="500">
+                    <div class="feature-icon">🎡</div>
+                    <h3>Life Wheel</h3>
+                    <p>See where your time actually goes. Meetings, deep work, social, health, rest—visualized in one beautiful wheel.</p>
+                </div>
+
+                <!-- Calendar Sync -->
+                <div class="feature-item" data-animate="fade-up" data-delay="550">
+                    <div class="feature-icon">🔄</div>
+                    <h3>All Your Calendars</h3>
+                    <p>Connect Google Calendar, Microsoft Outlook, and Apple Calendar. Clara sees everything in one unified view.</p>
+                </div>
+
+                <!-- Task Management -->
+                <div class="feature-item" data-animate="fade-up" data-delay="600">
+                    <div class="feature-icon">✅</div>
+                    <h3>Smart Tasks</h3>
+                    <p>Clara prioritizes what to do first. "Do This First" shows your most important task based on deadlines, energy, and context.</p>
+                </div>
+
+                <!-- Mood Check-in -->
+                <div class="feature-item" data-animate="fade-up" data-delay="650">
+                    <div class="feature-icon">😊</div>
+                    <h3>Mood Check-In</h3>
+                    <p>Quick daily check-ins help Clara learn your patterns. She'll notice when heavy meeting days affect your mood.</p>
                 </div>
             </div>
         </div>
@@ -278,8 +400,13 @@
     <!-- Voice Comparison -->
     <section class="voice-section">
         <div class="container">
+            <div class="section-label centered" data-animate="fade-up">The Difference</div>
+            <h2 class="section-title centered" data-animate="fade-up" data-delay="100">
+                Clara doesn't observe. She prescribes.
+            </h2>
+
             <div class="voice-grid">
-                <div class="voice-card other" data-animate="fade-up" data-delay="100">
+                <div class="voice-card other" data-animate="fade-up" data-delay="200">
                     <div class="voice-label">Other apps say:</div>
                     <div class="voice-quotes">
                         <p>"You have 6 meetings today."</p>
@@ -289,7 +416,7 @@
                     <div class="voice-verdict">Observational. Passive. Unhelpful.</div>
                 </div>
 
-                <div class="voice-card clara" data-animate="fade-up" data-delay="200">
+                <div class="voice-card clara" data-animate="fade-up" data-delay="300">
                     <div class="voice-label">Clara says:</div>
                     <div class="voice-quotes">
                         <p>"You are 127% over capacity."</p>
@@ -297,6 +424,57 @@
                         <p>"Your sleep deficit costs you 20% today."</p>
                     </div>
                     <div class="voice-verdict">Diagnostic. Prescriptive. Actionable.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section (NEW) -->
+    <section class="integrations-section">
+        <div class="container">
+            <div class="section-label centered" data-animate="fade-up">Connects With</div>
+            <h2 class="section-title centered" data-animate="fade-up" data-delay="100">
+                Your tools. One brain.
+            </h2>
+
+            <div class="integrations-grid" data-animate="fade-up" data-delay="200">
+                <div class="integration-item">
+                    <div class="integration-icon google">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                    <span>Google Calendar</span>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-icon outlook">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="#0078D4" d="M24 7.387v10.478c0 .23-.08.424-.238.576-.158.152-.362.228-.61.228h-8.86v-8.39l4.666 2.87 4.958-3.18.084-.064v-2.518z"/>
+                            <path fill="#0078D4" d="M24 4.385v2.592l-5.042 3.238-4.666-2.87V4.385c0-.23.08-.424.238-.576.158-.152.362-.228.61-.228h8.25c.247 0 .452.076.61.228z"/>
+                            <path fill="#0078D4" d="M14.292 7.345v11.324H1.854c-.247 0-.452-.076-.61-.228C1.086 18.29 1 18.096 1 17.866V5.387c0-.23.08-.424.238-.576.158-.152.362-.228.61-.228h2.444v10.086c0 .562.308 1.05.776 1.31l9.224 5.326z"/>
+                            <path fill="#28A8EA" d="M9.5 9.5c0 2.485-2.015 4.5-4.5 4.5S.5 11.985.5 9.5 2.515 5 5 5s4.5 2.015 4.5 4.5z"/>
+                        </svg>
+                    </div>
+                    <span>Outlook</span>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-icon apple">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="#000">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                    </div>
+                    <span>Apple Calendar</span>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-icon health">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="#FF2D55" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <span>Apple Health</span>
                 </div>
             </div>
         </div>
@@ -351,7 +529,7 @@
     </section>
 
     <!-- How it Works -->
-    <section class="how-section" id="features">
+    <section class="how-section">
         <div class="container">
             <div class="section-label" data-animate="fade-up">How It Works</div>
             <h2 class="section-title" data-animate="fade-up" data-delay="100">
@@ -442,12 +620,13 @@
                         <div class="logo-mark">C</div>
                         <span class="logo-text">Clara</span>
                     </a>
-                    <p>Time intelligence for humans.</p>
+                    <p>AI time intelligence for humans.</p>
                 </div>
                 <div class="footer-links">
                     <div class="link-group">
                         <h4>Product</h4>
                         <a href="#features">Features</a>
+                        <a href="#clara-ai">Clara AI</a>
                         <a href="#science">Research</a>
                         <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498">Download</a>
                     </div>
@@ -470,7 +649,27 @@
     </footer>
 
     <script>
-        // Scroll animations
+        // Page Load Animation
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('pageLoader');
+            const progress = document.querySelector('.loader-progress');
+
+            // Animate progress bar
+            progress.style.width = '100%';
+
+            // Hide loader after animation
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+                document.body.classList.remove('loading');
+
+                // Remove loader from DOM after transition
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 800);
+        });
+
+        // Scroll animations with stagger
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -518,22 +717,6 @@
             });
         });
 
-        // Copy button
-        const copyBtn = document.getElementById('copyBtn');
-        if (copyBtn) {
-            copyBtn.addEventListener('click', () => {
-                const message = "I need to decline—I have back-to-back commitments and won't give this proper attention. Can we find time Thursday?";
-                navigator.clipboard.writeText(message).then(() => {
-                    copyBtn.textContent = 'Copied!';
-                    copyBtn.classList.add('copied');
-                    setTimeout(() => {
-                        copyBtn.textContent = 'Copy Message';
-                        copyBtn.classList.remove('copied');
-                    }, 2000);
-                });
-            });
-        }
-
         // Parallax effect on hero
         window.addEventListener('scroll', () => {
             const scrolled = window.scrollY;
@@ -541,6 +724,39 @@
             if (heroVisual && scrolled < 800) {
                 heroVisual.style.transform = `translateY(${scrolled * 0.1}px)`;
             }
+        });
+
+        // Chat message animation
+        const chatMessages = document.querySelectorAll('.chat-message');
+        let messageDelay = 0;
+
+        const chatObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const messages = entry.target.querySelectorAll('.chat-message');
+                    messages.forEach((msg, index) => {
+                        setTimeout(() => {
+                            msg.classList.add('show');
+                        }, index * 400);
+                    });
+                    chatObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const chatDemo = document.querySelector('.chat-messages');
+        if (chatDemo) {
+            chatObserver.observe(chatDemo);
+        }
+
+        // Suggestion chip interactions
+        document.querySelectorAll('.suggestion-chip').forEach(chip => {
+            chip.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
         });
     </script>
 </body>
