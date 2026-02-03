@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clara - Time Intelligence System | Protect Your Time, Protect Your Life</title>
-    <meta name="description" content="Clara is a Time Intelligence System that diagnoses your overload, prescribes what to decline, and protects your focus. Not a calendar app—a decision engine for your time.">
-    <meta name="keywords" content="time intelligence, AI calendar, burnout prevention, work-life balance, health tracking, meeting overload, focus time, productivity">
-    <meta property="og:title" content="Clara - Time Intelligence System">
-    <meta property="og:description" content="Stop surviving your calendar. Start commanding it. Clara tells you what to decline, when to protect, and how to reclaim your time.">
+    <title>Clara | Your Time Protection Agent</title>
+    <meta name="description" content="Clara diagnoses your overload, tells you what to decline, and protects your time using health data. Not a calendar—a decision engine.">
+    <meta name="keywords" content="time intelligence, burnout prevention, work-life balance, calendar AI, meeting overload">
+    <meta property="og:title" content="Clara | Your Time Protection Agent">
+    <meta property="og:description" content="Stop surviving your calendar. Clara tells you what to decline, when to protect, and how to reclaim your time.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://theclaraai.com">
-    <meta property="og:image" content="https://theclaraai.com/og-image.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,413 +17,282 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="bg-gradient"></div>
-    <div class="bg-grid"></div>
-    <canvas id="particles"></canvas>
+    <div class="noise"></div>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="/" class="logo">
-                <span class="logo-icon">⚡</span>
+                <div class="logo-mark">C</div>
                 <span class="logo-text">Clara</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#science">The Science</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#science">Research</a></li>
             </ul>
             <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="nav-cta">
-                <span class="cta-pulse"></span>
-                Download Free
+                Get Clara <span class="arrow">→</span>
             </a>
         </div>
     </nav>
 
-    <!-- Hero Section - Completely Redesigned -->
+    <!-- Hero -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Time Intelligence System
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-eyebrow" data-animate="fade-up" data-delay="0">
+                    <span class="eyebrow-dot"></span>
+                    Time Intelligence System
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line" data-animate="fade-up" data-delay="100">Your calendar is</span>
+                    <span class="title-line" data-animate="fade-up" data-delay="200">burning you out.</span>
+                    <span class="title-line highlight" data-animate="fade-up" data-delay="300">Clara stops it.</span>
+                </h1>
+
+                <p class="hero-description" data-animate="fade-up" data-delay="400">
+                    Clara reads your calendar and health data to diagnose overload before you feel it.
+                    She tells you exactly which meeting to decline—and writes the message for you.
+                </p>
+
+                <div class="hero-ctas" data-animate="fade-up" data-delay="500">
+                    <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        Download Free
+                    </a>
+                    <a href="#problem" class="btn-ghost">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="hero-stats" data-animate="fade-up" data-delay="600">
+                    <div class="stat">
+                        <span class="stat-value">77%</span>
+                        <span class="stat-label">have experienced burnout</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value">$322B</span>
+                        <span class="stat-label">lost to burnout yearly</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value">3x</span>
+                        <span class="stat-label">more meetings since 2020</span>
+                    </div>
+                </div>
             </div>
-            <h1 class="hero-title">
-                <span class="title-line">Stop Surviving</span>
-                <span class="title-line">Your Calendar.</span>
-                <span class="title-line gradient-text">Command It.</span>
-            </h1>
-            <p class="hero-subtitle">
-                Clara isn't a calendar app—it's your <strong>time protection agent</strong>.
-                She diagnoses your overload, tells you exactly what to decline,
-                and uses your health data to guard your capacity before you burn out.
+
+            <div class="hero-visual" data-animate="fade-left" data-delay="300">
+                <div class="device-frame">
+                    <div class="device-screen">
+                        <div class="app-demo">
+                            <div class="demo-header">
+                                <span class="demo-time">9:41</span>
+                                <span class="demo-title">Clara</span>
+                            </div>
+                            <div class="demo-content">
+                                <div class="clara-card">
+                                    <div class="card-status critical">
+                                        <span class="status-dot"></span>
+                                        <span class="status-text">OVERLOADED</span>
+                                        <span class="status-value">127%</span>
+                                    </div>
+                                    <p class="card-message">
+                                        6 meetings today. 5.2 hours blocked. Your largest focus window is 45 minutes.
+                                        After 5.5h sleep, cognitive capacity is down ~20%.
+                                    </p>
+                                    <div class="card-action">
+                                        <div class="action-label">Recommended Action</div>
+                                        <div class="action-text">Decline 2pm Product Review</div>
+                                        <button class="action-btn">Get Decline Message →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="device-notch"></div>
+                </div>
+
+                <div class="floating-badges">
+                    <div class="badge badge-1">
+                        <span class="badge-icon">😴</span>
+                        <span class="badge-text">Sleep: 5.5h detected</span>
+                    </div>
+                    <div class="badge badge-2">
+                        <span class="badge-icon">🛑</span>
+                        <span class="badge-text">1 decline suggested</span>
+                    </div>
+                    <div class="badge badge-3">
+                        <span class="badge-icon">🎯</span>
+                        <span class="badge-text">Focus time: 45min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section" id="problem">
+        <div class="container">
+            <div class="section-label" data-animate="fade-up">The Problem</div>
+            <h2 class="section-title large" data-animate="fade-up" data-delay="100">
+                Your calendar doesn't know<br>you're human.
+            </h2>
+            <p class="section-desc" data-animate="fade-up" data-delay="200">
+                It doesn't know you slept 5 hours. It doesn't know you have 6 back-to-back meetings.
+                It just keeps booking. You keep burning out.
             </p>
-            <div class="hero-cta-group">
-                <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="btn btn-primary btn-large glow-effect">
-                    <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                    </svg>
-                    Download for iOS - Free
-                </a>
-                <a href="#science" class="btn btn-secondary btn-large">
-                    See the Research
-                    <svg class="arrow-down" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="hero-proof">
-                <div class="proof-item">
-                    <span class="proof-number">77%</span>
-                    <span class="proof-text">of workers have burned out</span>
-                </div>
-                <div class="proof-divider"></div>
-                <div class="proof-item">
-                    <span class="proof-number">$322B</span>
-                    <span class="proof-text">lost annually to burnout</span>
-                </div>
-                <div class="proof-divider"></div>
-                <div class="proof-item">
-                    <span class="proof-number">40%</span>
-                    <span class="proof-text">productivity lost to task-switching</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="phone-wrapper">
-                <div class="phone-glow"></div>
-                <div class="phone-mockup">
-                    <div class="phone-notch"></div>
-                    <div class="phone-screen">
-                        <div class="clara-message-demo">
-                            <div class="clara-avatar">⚡</div>
-                            <div class="clara-bubble">
-                                <div class="clara-diagnostic">
-                                    <span class="diagnostic-label">CAPACITY STATUS</span>
-                                    <span class="diagnostic-value overloaded">127% OVERLOADED</span>
-                                </div>
-                                <p class="clara-text">You have 6 meetings today totaling 5.2 hours. Your largest focus block is 45 minutes. After last night's 5.5h sleep, your cognitive capacity is reduced ~20%.</p>
-                                <div class="clara-prescription">
-                                    <span class="prescription-label">PRESCRIPTION</span>
-                                    <p>Decline the 2pm Product Review. You're already at capacity—this meeting tips you into burnout territory.</p>
-                                </div>
-                                <button class="clara-action-btn">
-                                    <span>Generate Decline Message</span>
-                                    <span class="btn-arrow">→</span>
-                                </button>
-                            </div>
-                        </div>
+
+            <div class="problem-grid">
+                <div class="problem-card" data-animate="fade-up" data-delay="100">
+                    <div class="problem-number">01</div>
+                    <h3>Meeting Overload</h3>
+                    <p>Meetings have tripled since 2020. 76% of workers feel drained on meeting-heavy days.</p>
+                    <div class="problem-stat">
+                        <span class="big">3x</span>
+                        <span class="small">more meetings</span>
                     </div>
                 </div>
-            </div>
-            <div class="floating-cards">
-                <div class="floating-card card-1">
-                    <span class="fc-icon">🛑</span>
-                    <span class="fc-text">Say No recommendation ready</span>
+
+                <div class="problem-card" data-animate="fade-up" data-delay="200">
+                    <div class="problem-number">02</div>
+                    <h3>No Recovery Time</h3>
+                    <p>Back-to-back meetings cause stress accumulation. Your brain never gets a chance to reset.</p>
+                    <div class="problem-stat">
+                        <span class="big">0</span>
+                        <span class="small">minutes to breathe</span>
+                    </div>
                 </div>
-                <div class="floating-card card-2">
-                    <span class="fc-icon">😴</span>
-                    <span class="fc-text">Sleep deficit detected: 1.5h</span>
+
+                <div class="problem-card" data-animate="fade-up" data-delay="300">
+                    <div class="problem-number">03</div>
+                    <h3>Invisible Fatigue</h3>
+                    <p>Poor sleep costs you 20-40% cognitive capacity. But your calendar doesn't see it.</p>
+                    <div class="problem-stat">
+                        <span class="big">-40%</span>
+                        <span class="small">cognitive capacity</span>
+                    </div>
                 </div>
-                <div class="floating-card card-3">
-                    <span class="fc-icon">🎯</span>
-                    <span class="fc-text">Focus window: 9-11am protected</span>
-                </div>
-                <div class="floating-card card-4">
-                    <span class="fc-icon">📊</span>
-                    <span class="fc-text">Work-Life Score: 72</span>
+
+                <div class="problem-card" data-animate="fade-up" data-delay="400">
+                    <div class="problem-number">04</div>
+                    <h3>No One Says No</h3>
+                    <p>You know you should decline. But which meeting? What do you say? So you accept everything.</p>
+                    <div class="problem-stat">
+                        <span class="big">83%</span>
+                        <span class="small">of meetings are unproductive</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The Science Section - Research-Backed -->
-    <section class="science-section" id="science">
+    <!-- Solution Section -->
+    <section class="solution-section" id="solution">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">The Science</span>
-                <h2 class="section-title">Your Body Already Knows You're Overloaded</h2>
-                <p class="section-subtitle">
-                    Decades of research show that calendars, health, and cognitive performance are deeply connected.
-                    Clara is the first system that acts on this science.
+            <div class="solution-intro">
+                <div class="section-label light" data-animate="fade-up">The Solution</div>
+                <h2 class="section-title light large" data-animate="fade-up" data-delay="100">
+                    Meet Clara.
+                </h2>
+                <p class="section-desc light" data-animate="fade-up" data-delay="200">
+                    Not a calendar app. A time protection agent that diagnoses problems,
+                    prescribes actions, and tells you exactly what to do.
                 </p>
             </div>
 
-            <div class="research-grid">
-                <!-- Research Card 1: Burnout Cost -->
-                <div class="research-card featured">
-                    <div class="research-icon">💸</div>
-                    <div class="research-stat">$322B</div>
-                    <h3>The Cost of Burnout</h3>
-                    <p>Burnout costs businesses $322 billion annually in lost productivity. Per employee, disengagement costs $4,000-$20,000 depending on role.</p>
-                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0749379725000236" target="_blank" class="research-source">
-                        American Journal of Preventive Medicine, 2025 →
-                    </a>
+            <div class="solution-features">
+                <div class="feature-card main" data-animate="fade-up" data-delay="100">
+                    <div class="feature-label">Core Feature</div>
+                    <h3>The "Say No" Engine</h3>
+                    <p>Clara analyzes your capacity and tells you which meeting to decline. Then she writes the message.</p>
+
+                    <div class="decline-demo">
+                        <div class="decline-header">
+                            <span class="decline-badge">DECLINE SUGGESTION</span>
+                            <span class="decline-confidence">High confidence</span>
+                        </div>
+                        <div class="decline-meeting">
+                            <span class="meeting-time">2:00 PM</span>
+                            <span class="meeting-name">Product Review</span>
+                        </div>
+                        <div class="decline-reason">
+                            <strong>Why:</strong> You're at 6h of meetings. This pushes you past capacity. 3 back-to-backs before this.
+                        </div>
+                        <div class="decline-message">
+                            <div class="message-label">Ready to send:</div>
+                            <p>"I need to decline—I have back-to-back commitments and won't give this proper attention. Can we find time Thursday?"</p>
+                        </div>
+                        <button class="copy-btn" id="copyBtn">Copy Message</button>
+                    </div>
                 </div>
 
-                <!-- Research Card 2: Sleep Impact -->
-                <div class="research-card">
-                    <div class="research-icon">🧠</div>
-                    <div class="research-stat">20-40%</div>
-                    <h3>Sleep Deficit = Cognitive Decline</h3>
-                    <p>Sleep deprivation reduces cognitive performance by 20-40%. Workers averaging 6.5 hours report struggling to focus in meetings and generate ideas.</p>
-                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2656292/" target="_blank" class="research-source">
-                        PMC Sleep & Cognition Study →
-                    </a>
-                </div>
-
-                <!-- Research Card 3: Meeting Overload -->
-                <div class="research-card">
-                    <div class="research-icon">📅</div>
-                    <div class="research-stat">3x</div>
-                    <h3>Meetings Have Tripled</h3>
-                    <p>Since 2020, meetings have tripled. 76% of workers feel drained on meeting-heavy days. 51% work overtime due to meeting overload.</p>
-                    <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/brain-research" target="_blank" class="research-source">
-                        Microsoft Work Trend Index →
-                    </a>
-                </div>
-
-                <!-- Research Card 4: HRV & Stress -->
-                <div class="research-card">
-                    <div class="research-icon">❤️</div>
-                    <div class="research-stat">HRV</div>
-                    <h3>Your Heart Predicts Burnout</h3>
-                    <p>Heart Rate Variability (HRV) is a validated biomarker for stress and burnout. Lower HRV = reduced parasympathetic recovery = higher burnout risk.</p>
-                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6258751/" target="_blank" class="research-source">
-                        PMC HRV & Occupational Stress Review →
-                    </a>
-                </div>
-
-                <!-- Research Card 5: Back-to-Back -->
-                <div class="research-card">
-                    <div class="research-icon">⚡</div>
-                    <div class="research-stat">+stress</div>
-                    <h3>Back-to-Back = Brain Damage</h3>
-                    <p>Microsoft's brain research shows back-to-back meetings cause stress accumulation. Even 10-minute breaks between calls reset stress markers.</p>
-                    <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/brain-research" target="_blank" class="research-source">
-                        Microsoft Human Factors Lab →
-                    </a>
-                </div>
-
-                <!-- Research Card 6: Task Switching -->
-                <div class="research-card">
-                    <div class="research-icon">🔀</div>
-                    <div class="research-stat">40%</div>
-                    <h3>Task-Switching Destroys Focus</h3>
-                    <p>Every context switch costs 20-40% productivity. "Attention residue" means your brain stays on the previous task even after you've moved on.</p>
-                    <a href="https://hbr.org/2021/11/the-psychology-behind-meeting-overload" target="_blank" class="research-source">
-                        Harvard Business Review →
-                    </a>
-                </div>
-            </div>
-
-            <div class="research-conclusion">
-                <div class="conclusion-icon">💡</div>
-                <h3>The Connection No One Made—Until Now</h3>
-                <p>
-                    Your calendar doesn't know you slept 5 hours. Your health app doesn't know you have 6 meetings.
-                    Your brain pays the price for their ignorance. <strong>Clara connects them.</strong>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- What Clara Does Differently -->
-    <section class="clara-difference" id="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">What Clara Does</span>
-                <h2 class="section-title">Not a Calendar. A Decision Engine.</h2>
-                <p class="section-subtitle">
-                    Other apps show your schedule. Clara tells you what to <em>do</em> about it.
-                </p>
-            </div>
-
-            <div class="features-bento">
-                <!-- Say No Feature - Hero Card -->
-                <div class="bento-card bento-large say-no-feature">
-                    <div class="bento-content">
-                        <span class="feature-badge critical">The "Say No" Engine</span>
-                        <h3>Clara Tells You What to Decline</h3>
-                        <p>This is the feature no other app has. Clara analyzes your capacity, identifies meetings that will push you into overload, and tells you exactly which one to decline—with a ready-to-send message.</p>
-                        <div class="say-no-demo">
-                            <div class="say-no-card">
-                                <div class="sn-header">
-                                    <span class="sn-badge">DECLINE RECOMMENDATION</span>
-                                    <span class="sn-confidence">High confidence</span>
-                                </div>
-                                <div class="sn-meeting">
-                                    <span class="sn-time">2:00 PM</span>
-                                    <span class="sn-title">Product Review Meeting</span>
-                                </div>
-                                <div class="sn-reason">
-                                    <strong>Why:</strong> You're at 6 hours of meetings. This tips you past sustainable capacity. You have 3 back-to-backs before this.
-                                </div>
-                                <div class="sn-message">
-                                    <strong>Suggested message:</strong>
-                                    <p>"I need to decline—I have back-to-back commitments today and won't give this proper attention. Can we find time Thursday when I have more bandwidth?"</p>
-                                </div>
-                                <button class="sn-copy-btn">Copy Message</button>
-                            </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Health × Calendar</h3>
+                    <p>Clara reads your sleep, HRV, and activity from Apple Health. Bad sleep? She reduces your capacity and warns you.</p>
+                    <div class="health-indicators">
+                        <div class="indicator bad">
+                            <span>😴 5.5h sleep</span>
+                            <span class="impact">→ -20% capacity</span>
+                        </div>
+                        <div class="indicator warning">
+                            <span>❤️ HRV 32ms</span>
+                            <span class="impact">→ Recovery needed</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Health-Calendar Correlation -->
-                <div class="bento-card bento-medium health-calendar-feature">
-                    <span class="feature-badge">Health × Calendar</span>
-                    <h3>Your Body Informs Your Schedule</h3>
-                    <p>Clara reads your sleep, HRV, and activity from Apple Health. Bad night? She adjusts your capacity calculation and warns you before you overcommit.</p>
-                    <div class="health-correlation-demo">
-                        <div class="correlation-item">
-                            <div class="corr-metric">
-                                <span class="corr-icon">😴</span>
-                                <span class="corr-value bad">5.5h sleep</span>
-                            </div>
-                            <div class="corr-arrow">→</div>
-                            <div class="corr-impact">
-                                <span class="impact-text">Capacity reduced 20%</span>
-                            </div>
-                        </div>
-                        <div class="correlation-item">
-                            <div class="corr-metric">
-                                <span class="corr-icon">❤️</span>
-                                <span class="corr-value warning">HRV 32ms</span>
-                            </div>
-                            <div class="corr-arrow">→</div>
-                            <div class="corr-impact">
-                                <span class="impact-text">Recovery mode advised</span>
-                            </div>
-                        </div>
-                        <div class="correlation-item">
-                            <div class="corr-metric">
-                                <span class="corr-icon">🚶</span>
-                                <span class="corr-value good">8,200 steps</span>
-                            </div>
-                            <div class="corr-arrow">→</div>
-                            <div class="corr-impact">
-                                <span class="impact-text">Activity offset: +5%</span>
-                            </div>
-                        </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="300">
+                    <div class="feature-icon">📊</div>
+                    <h3>Pattern Detection</h3>
+                    <p>Clara analyzes 30-60 days and reveals patterns you can't see. Weekend work creep. Tuesday overload.</p>
+                    <div class="pattern-example">
+                        <span class="pattern-icon">⚠️</span>
+                        <span class="pattern-text">"This is the 3rd Sunday with work. A month ago it was zero."</span>
                     </div>
                 </div>
 
-                <!-- Pattern Intelligence -->
-                <div class="bento-card bento-medium pattern-feature">
-                    <span class="feature-badge">Pattern Intelligence</span>
-                    <h3>Clara Sees What You Can't</h3>
-                    <p>Analyzing 30-60 days of data, Clara reveals patterns invisible to you. Weekend work creep. Tuesday meeting overload. Post-lunch energy crashes.</p>
-                    <div class="pattern-examples">
-                        <div class="pattern-insight">
-                            <span class="pi-icon">📈</span>
-                            <span class="pi-text">"This is the 3rd week in a row with Sunday work. A month ago it was zero."</span>
-                        </div>
-                        <div class="pattern-insight">
-                            <span class="pi-icon">🔄</span>
-                            <span class="pi-text">"On days after evening meetings, your next-day meetings start 45min later on average."</span>
-                        </div>
-                        <div class="pattern-insight">
-                            <span class="pi-icon">⚠️</span>
-                            <span class="pi-text">"Your meeting load increased 40% vs last month."</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Diagnostic Not Observational -->
-                <div class="bento-card bento-small diagnostic-card">
-                    <div class="small-card-icon">🩺</div>
-                    <h4>Diagnostic, Not Observational</h4>
-                    <p>Clara says "You are 37% overloaded" not "You seem busy." Numbers. Consequences. Actions.</p>
-                </div>
-
-                <!-- Prescriptive -->
-                <div class="bento-card bento-small prescriptive-card">
-                    <div class="small-card-icon">💊</div>
-                    <h4>Prescriptive, Not Suggestive</h4>
-                    <p>Clara says "Decline this meeting" not "You might want to consider..." No hedging. Clear directives.</p>
-                </div>
-
-                <!-- Focus Protection -->
-                <div class="bento-card bento-small focus-card">
-                    <div class="small-card-icon">🎯</div>
-                    <h4>Focus Time Protection</h4>
-                    <p>Clara identifies your best deep work windows and can block them on your calendar with one tap.</p>
-                </div>
-
-                <!-- Daily Briefing -->
-                <div class="bento-card bento-small briefing-card">
-                    <div class="small-card-icon">☀️</div>
-                    <h4>Morning Intelligence Brief</h4>
-                    <p>Start each day knowing your capacity status, energy dips to expect, and what to protect.</p>
-                </div>
-
-                <!-- Unified Calendar -->
-                <div class="bento-card bento-wide unified-feature">
-                    <div class="unified-content">
-                        <span class="feature-badge">Unified Intelligence</span>
-                        <h3>All Calendars. One Command Center.</h3>
-                        <p>Google, Outlook, Apple Calendar—merged into a single intelligent view. Clara doesn't just show conflicts. She diagnoses them and tells you which commitment to move.</p>
-                    </div>
-                    <div class="unified-visual">
-                        <div class="calendar-merge-animation">
-                            <div class="merge-icon google-cal">
-                                <svg viewBox="0 0 24 24" fill="#4285F4"><circle cx="12" cy="12" r="10"/></svg>
-                                <span>Google</span>
-                            </div>
-                            <div class="merge-icon outlook-cal">
-                                <svg viewBox="0 0 24 24" fill="#0078D4"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg>
-                                <span>Outlook</span>
-                            </div>
-                            <div class="merge-icon apple-cal">
-                                <svg viewBox="0 0 24 24" fill="#333"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83z"/></svg>
-                                <span>Apple</span>
-                            </div>
-                            <div class="merge-plus">+</div>
-                            <div class="merge-icon health-icon">
-                                <svg viewBox="0 0 24 24" fill="#FF2D55"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                                <span>Health</span>
-                            </div>
-                            <div class="merge-arrow">→</div>
-                            <div class="merge-result">
-                                <span class="merge-logo">⚡</span>
-                                <span class="merge-text">Clara</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="400">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Focus Protection</h3>
+                    <p>Clara finds your best deep work windows and blocks them. One tap to protect 2 hours.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clara's Voice - The Difference -->
+    <!-- Voice Comparison -->
     <section class="voice-section">
         <div class="container">
-            <div class="voice-comparison">
-                <div class="voice-card other-apps">
-                    <div class="voice-header">
-                        <span class="voice-label">Other Calendar Apps</span>
-                        <span class="voice-emoji">😐</span>
-                    </div>
-                    <div class="voice-examples">
+            <div class="voice-grid">
+                <div class="voice-card other" data-animate="fade-up" data-delay="100">
+                    <div class="voice-label">Other apps say:</div>
+                    <div class="voice-quotes">
                         <p>"You have 6 meetings today."</p>
-                        <p>"You might want to consider taking a break."</p>
                         <p>"Your schedule looks busy."</p>
-                        <p>"Perhaps you could decline something."</p>
+                        <p>"Consider taking a break."</p>
                     </div>
                     <div class="voice-verdict">Observational. Passive. Unhelpful.</div>
                 </div>
-                <div class="voice-card clara-voice">
-                    <div class="voice-header">
-                        <span class="voice-label">Clara</span>
-                        <span class="voice-emoji">⚡</span>
-                    </div>
-                    <div class="voice-examples">
-                        <p>"You are 127% over capacity today."</p>
-                        <p>"Decline the 2pm meeting. Here's the message."</p>
-                        <p>"Your sleep deficit costs you 20% cognitive capacity."</p>
-                        <p>"This is the 3rd Sunday with work. The cascade started when Thursday's meeting moved to Friday."</p>
+
+                <div class="voice-card clara" data-animate="fade-up" data-delay="200">
+                    <div class="voice-label">Clara says:</div>
+                    <div class="voice-quotes">
+                        <p>"You are 127% over capacity."</p>
+                        <p>"Decline the 2pm. Here's the message."</p>
+                        <p>"Your sleep deficit costs you 20% today."</p>
                     </div>
                     <div class="voice-verdict">Diagnostic. Prescriptive. Actionable.</div>
                 </div>
@@ -432,237 +300,111 @@
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="how-it-works" id="how-it-works">
+    <!-- Research Section -->
+    <section class="research-section" id="science">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">How It Works</span>
-                <h2 class="section-title">From Chaos to Clarity in 60 Seconds</h2>
-                <p class="section-subtitle">No learning curve. No configuration. Connect and Clara starts protecting you.</p>
-            </div>
-            <div class="steps-timeline">
-                <div class="step-card">
-                    <div class="step-number">01</div>
-                    <div class="step-icon-large">📲</div>
-                    <h3>Download Clara</h3>
-                    <p>Free on the App Store. No credit card. No trial. No catch. Just download.</p>
-                </div>
-                <div class="step-connector-line"></div>
-                <div class="step-card">
-                    <div class="step-number">02</div>
-                    <div class="step-icon-large">🔗</div>
-                    <h3>Connect Everything</h3>
-                    <p>One tap to link Google, Outlook, Apple Calendar, and Apple Health. Secure OAuth—we never see passwords.</p>
-                </div>
-                <div class="step-connector-line"></div>
-                <div class="step-card">
-                    <div class="step-number">03</div>
-                    <div class="step-icon-large">⚡</div>
-                    <h3>Clara Takes Over</h3>
-                    <p>Within hours, Clara understands your patterns. She starts diagnosing overload and prescribing protection immediately.</p>
-                </div>
+            <div class="section-label" data-animate="fade-up">The Research</div>
+            <h2 class="section-title" data-animate="fade-up" data-delay="100">
+                Built on science, not opinions.
+            </h2>
+
+            <div class="research-grid">
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0749379725000236" target="_blank" class="research-card" data-animate="fade-up" data-delay="100">
+                    <div class="research-stat">$322B</div>
+                    <div class="research-title">Annual cost of burnout</div>
+                    <div class="research-source">American Journal of Preventive Medicine, 2025</div>
+                </a>
+
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2656292/" target="_blank" class="research-card" data-animate="fade-up" data-delay="150">
+                    <div class="research-stat">20-40%</div>
+                    <div class="research-title">Cognitive decline from sleep deprivation</div>
+                    <div class="research-source">PMC Sleep & Cognition</div>
+                </a>
+
+                <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/brain-research" target="_blank" class="research-card" data-animate="fade-up" data-delay="200">
+                    <div class="research-stat">+Stress</div>
+                    <div class="research-title">Back-to-back meetings accumulate stress</div>
+                    <div class="research-source">Microsoft Human Factors Lab</div>
+                </a>
+
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6258751/" target="_blank" class="research-card" data-animate="fade-up" data-delay="250">
+                    <div class="research-stat">HRV</div>
+                    <div class="research-title">Heart rate variability predicts burnout</div>
+                    <div class="research-source">PMC Occupational Stress Review</div>
+                </a>
+
+                <a href="https://hbr.org/2021/11/the-psychology-behind-meeting-overload" target="_blank" class="research-card" data-animate="fade-up" data-delay="300">
+                    <div class="research-stat">40%</div>
+                    <div class="research-title">Productivity lost to task-switching</div>
+                    <div class="research-source">Harvard Business Review</div>
+                </a>
+
+                <a href="https://www.microsoft.com/en-us/worklab/work-trend-index" target="_blank" class="research-card" data-animate="fade-up" data-delay="350">
+                    <div class="research-stat">3x</div>
+                    <div class="research-title">Meetings have tripled since 2020</div>
+                    <div class="research-source">Microsoft Work Trend Index</div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Comparison Section -->
-    <section class="comparison-section">
+    <!-- How it Works -->
+    <section class="how-section" id="features">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">The Difference</span>
-                <h2 class="section-title">What Clara Has That Others Don't</h2>
-            </div>
-            <div class="comparison-table">
-                <div class="comparison-header">
-                    <div class="comparison-feature">Capability</div>
-                    <div class="comparison-them">Calendar Apps</div>
-                    <div class="comparison-us">Clara</div>
-                </div>
-                <div class="comparison-row">
-                    <div class="comparison-feature">
-                        <span class="feature-name">Tells you what to decline</span>
-                    </div>
-                    <div class="comparison-them"><span class="no">✗</span></div>
-                    <div class="comparison-us"><span class="check">✓</span></div>
-                </div>
-                <div class="comparison-row">
-                    <div class="comparison-feature">
-                        <span class="feature-name">Generates decline messages</span>
-                    </div>
-                    <div class="comparison-them"><span class="no">✗</span></div>
-                    <div class="comparison-us"><span class="check">✓</span></div>
-                </div>
-                <div class="comparison-row">
-                    <div class="comparison-feature">
-                        <span class="feature-name">Health data affects scheduling</span>
-                    </div>
-                    <div class="comparison-them"><span class="no">✗</span></div>
-                    <div class="comparison-us"><span class="check">✓</span></div>
-                </div>
-                <div class="comparison-row">
-                    <div class="comparison-feature">
-                        <span class="feature-name">Capacity overload percentage</span>
-                    </div>
-                    <div class="comparison-them"><span class="no">✗</span></div>
-                    <div class="comparison-us"><span class="check">✓</span></div>
-                </div>
-                <div class="comparison-row">
-                    <div class="comparison-feature">
-                        <span class="feature-name">Sleep → cognitive impact</span>
-                    </div>
-                    <div class="comparison-them"><span class="no">✗</span></div>
-                    <div class="comparison-us"><span class="check">✓</span></div>
-                </div>
-                <div class="comparison-row">
-                    <div class="comparison-feature">
-                        <span class="feature-name">30-60 day pattern analysis</span>
-                    </div>
-                    <div class="comparison-them"><span class="no">✗</span></div>
-                    <div class="comparison-us"><span class="check">✓</span></div>
-                </div>
-                <div class="comparison-row">
-                    <div class="comparison-feature">
-                        <span class="feature-name">Weekend work creep detection</span>
-                    </div>
-                    <div class="comparison-them"><span class="no">✗</span></div>
-                    <div class="comparison-us"><span class="check">✓</span></div>
-                </div>
-                <div class="comparison-row highlight">
-                    <div class="comparison-feature">
-                        <span class="feature-name">Price</span>
-                    </div>
-                    <div class="comparison-them"><span class="price">$5-15/mo</span></div>
-                    <div class="comparison-us"><span class="free-badge">FREE</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="section-label" data-animate="fade-up">How It Works</div>
+            <h2 class="section-title" data-animate="fade-up" data-delay="100">
+                60 seconds to protection.
+            </h2>
 
-    <!-- Privacy Section -->
-    <section class="privacy-section">
-        <div class="container">
-            <div class="privacy-content">
-                <div class="privacy-text">
-                    <span class="section-badge">Privacy First</span>
-                    <h2>Your Data Stays Yours</h2>
-                    <p>We handle your most sensitive data—calendars and health. We take that responsibility seriously.</p>
-                    <ul class="privacy-list">
-                        <li>
-                            <span class="privacy-icon">🔒</span>
-                            <div>
-                                <strong>End-to-End Encryption</strong>
-                                <span>All data encrypted in transit and at rest</span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="privacy-icon">🚫</span>
-                            <div>
-                                <strong>We Never Sell Data</strong>
-                                <span>Your information is never sold or shared</span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="privacy-icon">🗑️</span>
-                            <div>
-                                <strong>Delete Anytime</strong>
-                                <span>One-click deletion of all your data</span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="privacy-icon">🔑</span>
-                            <div>
-                                <strong>OAuth Only</strong>
-                                <span>We never see your passwords</span>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="steps">
+                <div class="step" data-animate="fade-up" data-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Download</h3>
+                        <p>Free on the App Store. No credit card. No trial period.</p>
+                    </div>
                 </div>
-                <div class="privacy-visual">
-                    <div class="shield-container">
-                        <div class="shield-glow"></div>
-                        <div class="shield-icon">🛡️</div>
-                        <div class="shield-text">Protected</div>
+
+                <div class="step-line"></div>
+
+                <div class="step" data-animate="fade-up" data-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Connect</h3>
+                        <p>One tap to link Google, Outlook, Apple Calendar + Apple Health.</p>
+                    </div>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="step" data-animate="fade-up" data-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Protected</h3>
+                        <p>Clara starts diagnosing overload and prescribing protection immediately.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="mission-section" id="mission">
+    <!-- Mission -->
+    <section class="mission-section">
         <div class="container">
-            <div class="mission-content">
-                <span class="section-badge light">Our Mission</span>
-                <h2 class="mission-title">
-                    You Are Not a Machine.
-                </h2>
-                <p class="mission-text">
+            <div class="mission-content" data-animate="fade-up">
+                <h2>You are not a machine.</h2>
+                <p>
                     Most productivity tools optimize you for output. More meetings. More tasks. More throughput.
                     They treat you like a resource to be maximized until you break.
                 </p>
-                <p class="mission-text">
-                    We started Clara because we've been there. Burned out. Overwhelmed. Watching our calendars fill up
-                    while our energy drained away. We realized the problem wasn't us—it was that our tools didn't know
-                    we were human.
-                </p>
-                <p class="mission-text">
-                    <strong>Clara knows.</strong> She reads your sleep. She tracks your capacity. She tells you when to stop,
-                    not just when to go. Our mission is simple: protect people from their calendars before their calendars
-                    destroy them.
+                <p>
+                    Clara is different. She reads your sleep. Tracks your capacity. Tells you when to stop.
+                    Our mission: protect people from their calendars before their calendars destroy them.
                 </p>
                 <div class="mission-values">
-                    <div class="value">
-                        <span class="value-icon">🛡️</span>
-                        <span class="value-text">Protection Over Productivity</span>
-                    </div>
-                    <div class="value">
-                        <span class="value-icon">🩺</span>
-                        <span class="value-text">Diagnosis Over Display</span>
-                    </div>
-                    <div class="value">
-                        <span class="value-icon">💊</span>
-                        <span class="value-text">Prescription Over Suggestion</span>
-                    </div>
-                    <div class="value">
-                        <span class="value-icon">❤️</span>
-                        <span class="value-text">Human Over Machine</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">FAQ</span>
-                <h2 class="section-title">Questions</h2>
-            </div>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3 class="faq-question">Is Clara really free?</h3>
-                    <p class="faq-answer">Yes. Completely free. No trials, no premium tiers, no credit card required. We believe time protection shouldn't be a luxury.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">How is Clara different from other calendar apps?</h3>
-                    <p class="faq-answer">Other apps show your schedule. Clara diagnoses your overload and tells you what to do about it. She's not a calendar—she's your time protection agent.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">How does health data integration work?</h3>
-                    <p class="faq-answer">Clara connects to Apple Health to read sleep, steps, HRV, and activity. This data informs your capacity calculation—bad sleep = reduced capacity = Clara protects you from overcommitting.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Which calendars does Clara support?</h3>
-                    <p class="faq-answer">Google Calendar, Microsoft Outlook, and Apple Calendar. You can connect multiple accounts from each provider.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Is my data secure?</h3>
-                    <p class="faq-answer">Yes. All data is encrypted in transit and at rest. We use OAuth for calendar connections (we never see your passwords). You can delete all your data with one tap at any time.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Is there an Android version?</h3>
-                    <p class="faq-answer">Clara is currently iOS-only. Android is in development—join our waitlist to be notified.</p>
+                    <span>Protection over productivity</span>
+                    <span>Diagnosis over display</span>
+                    <span>Human over machine</span>
                 </div>
             </div>
         </div>
@@ -671,17 +413,16 @@
     <!-- Final CTA -->
     <section class="final-cta">
         <div class="container">
-            <div class="cta-content">
-                <div class="cta-badge">Your Time Is Your Life</div>
-                <h2>Stop Letting Your Calendar Control You</h2>
-                <p>Join the people who've taken back their time. Download Clara and let her protect your capacity, your focus, and your wellbeing.</p>
-                <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="btn btn-primary btn-xlarge glow-effect">
-                    <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+            <div class="cta-content" data-animate="fade-up">
+                <h2>Take back your time.</h2>
+                <p>Join thousands who've stopped surviving their calendars.</p>
+                <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498" class="btn-primary large">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
-                    Download Free on App Store
+                    Download Free for iOS
                 </a>
-                <div class="cta-features">
+                <div class="cta-notes">
                     <span>✓ Free forever</span>
                     <span>✓ No credit card</span>
                     <span>✓ Setup in 60 seconds</span>
@@ -693,126 +434,41 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-content">
                 <div class="footer-brand">
                     <a href="/" class="logo">
-                        <span class="logo-icon">⚡</span>
+                        <div class="logo-mark">C</div>
                         <span class="logo-text">Clara</span>
                     </a>
-                    <p>Time Intelligence for humans who refuse to be machines.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link">Twitter</a>
-                        <a href="#" class="social-link">LinkedIn</a>
+                    <p>Time intelligence for humans.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#science">Research</a>
+                        <a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498">Download</a>
                     </div>
-                </div>
-                <div class="footer-links-group">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#science">The Science</a></li>
-                        <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="https://apps.apple.com/app/alltime-ai-calendar/id6738542498">Download</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links-group">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#mission">Mission</a></li>
-                        <li><a href="/support">Support</a></li>
-                        <li><a href="mailto:support@theclaraai.com">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links-group">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="/privacy">Privacy Policy</a></li>
-                        <li><a href="/terms">Terms of Service</a></li>
-                    </ul>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="/support">Support</a>
+                        <a href="mailto:support@theclaraai.com">Contact</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="/privacy">Privacy</a>
+                        <a href="/terms">Terms</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Clara. All rights reserved.</p>
-                <p class="research-credit">Statistics sourced from peer-reviewed research. <a href="#science">See sources →</a></p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Particle Animation
-        const canvas = document.getElementById('particles');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-
-        function createParticle() {
-            return {
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                size: Math.random() * 2 + 0.5,
-                speedX: (Math.random() - 0.5) * 0.3,
-                speedY: (Math.random() - 0.5) * 0.3,
-                opacity: Math.random() * 0.4 + 0.1
-            };
-        }
-
-        function initParticles() {
-            particles = [];
-            for (let i = 0; i < 60; i++) {
-                particles.push(createParticle());
-            }
-        }
-
-        function animateParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.x += p.speedX;
-                p.y += p.speedY;
-
-                if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
-                if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
-
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(13, 148, 136, ${p.opacity})`;
-                ctx.fill();
-            });
-            requestAnimationFrame(animateParticles);
-        }
-
-        resizeCanvas();
-        initParticles();
-        animateParticles();
-        window.addEventListener('resize', () => {
-            resizeCanvas();
-            initParticles();
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Navbar background on scroll
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Animate elements on scroll
+        // Scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -821,70 +477,69 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    const delay = entry.target.dataset.delay || 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('animate-in');
+                    }, delay);
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.bento-card, .step-card, .research-card, .faq-item, .mission-content, .privacy-content, .comparison-row, .voice-card, .research-conclusion').forEach(el => {
+        document.querySelectorAll('[data-animate]').forEach(el => {
             observer.observe(el);
         });
 
-        // Animated counter for hero proof stats
-        function animateValue(element, start, end, duration, suffix = '') {
-            const startTime = performance.now();
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        let lastScroll = 0;
 
-            function update(currentTime) {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                const easeOut = 1 - Math.pow(1 - progress, 3);
-                const current = Math.floor(start + (end - start) * easeOut);
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
 
-                element.textContent = current + suffix;
-
-                if (progress < 1) {
-                    requestAnimationFrame(update);
-                }
+            if (currentScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
 
-            requestAnimationFrame(update);
-        }
+            lastScroll = currentScroll;
+        });
 
-        // Trigger hero stats animation
-        const heroProof = document.querySelector('.hero-proof');
-        if (heroProof) {
-            const heroObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Animate the stats
-                        heroObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-            heroObserver.observe(heroProof);
-        }
-
-        // FAQ accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                item.classList.toggle('active');
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             });
         });
 
-        // Copy button functionality for Say No demo
-        const copyBtn = document.querySelector('.sn-copy-btn');
+        // Copy button
+        const copyBtn = document.getElementById('copyBtn');
         if (copyBtn) {
             copyBtn.addEventListener('click', () => {
-                const message = "I need to decline—I have back-to-back commitments today and won't give this proper attention. Can we find time Thursday when I have more bandwidth?";
+                const message = "I need to decline—I have back-to-back commitments and won't give this proper attention. Can we find time Thursday?";
                 navigator.clipboard.writeText(message).then(() => {
                     copyBtn.textContent = 'Copied!';
+                    copyBtn.classList.add('copied');
                     setTimeout(() => {
                         copyBtn.textContent = 'Copy Message';
+                        copyBtn.classList.remove('copied');
                     }, 2000);
                 });
             });
         }
+
+        // Parallax effect on hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const heroVisual = document.querySelector('.hero-visual');
+            if (heroVisual && scrolled < 800) {
+                heroVisual.style.transform = `translateY(${scrolled * 0.1}px)`;
+            }
+        });
     </script>
 </body>
 </html>
