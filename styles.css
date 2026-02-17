@@ -1498,6 +1498,198 @@ h1, h2, h3, h4 {
 }
 
 /* ========================================
+   Content Pages (Privacy, Terms, Support)
+   ======================================== */
+.content-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 120px var(--space-lg) var(--space-4xl);
+}
+
+.content-page h1 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--slate-900);
+    margin-bottom: var(--space-sm);
+}
+
+.content-page .last-updated {
+    font-size: 14px;
+    color: var(--slate-500);
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--slate-200);
+}
+
+.content-page h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--slate-900);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--slate-100);
+}
+
+.content-page h2:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.content-page h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--slate-800);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.content-page h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--slate-800);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.content-page p {
+    font-size: 15px;
+    color: var(--slate-600);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+.content-page ul,
+.content-page ol {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-lg);
+}
+
+.content-page li {
+    font-size: 15px;
+    color: var(--slate-600);
+    line-height: 1.8;
+    margin-bottom: var(--space-sm);
+}
+
+.content-page li strong {
+    color: var(--slate-800);
+}
+
+.content-page a {
+    color: var(--teal-600);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.content-page a:hover {
+    color: var(--teal-700);
+    text-decoration: underline;
+}
+
+/* Support page cards */
+.support-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    margin: var(--space-xl) 0;
+}
+
+.support-card {
+    padding: var(--space-xl);
+    background: white;
+    border-radius: 16px;
+    border: 1px solid var(--slate-200);
+    text-align: center;
+    transition: all 0.3s var(--ease-out);
+}
+
+.support-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.support-card h3 {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+    color: var(--slate-900);
+}
+
+.support-card p {
+    font-size: 14px;
+    color: var(--slate-500);
+    margin-bottom: var(--space-sm);
+}
+
+.support-card a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--teal-600);
+}
+
+.support-card strong {
+    font-size: 1.25rem;
+    color: var(--teal-600);
+}
+
+/* Content page footer */
+.content-footer {
+    background: var(--slate-900);
+    padding: var(--space-xl) 0;
+}
+
+.content-footer-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-footer-links {
+    display: flex;
+    gap: var(--space-xl);
+}
+
+.content-footer-links a {
+    font-size: 14px;
+    color: var(--slate-400);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.content-footer-links a:hover {
+    color: white;
+}
+
+.content-footer .copyright {
+    font-size: 13px;
+    color: var(--slate-500);
+}
+
+@media (max-width: 768px) {
+    .support-options {
+        grid-template-columns: 1fr;
+    }
+
+    .content-footer-inner {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+    }
+
+    .content-footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-md);
+    }
+}
+
+/* ========================================
    Responsive
    ======================================== */
 @media (max-width: 1024px) {
