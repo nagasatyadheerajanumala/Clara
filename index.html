@@ -10,16 +10,13 @@
     <meta property="og:description" content="Stop surviving your calendar. Clara tells you what to decline, plans your day, and protects your time.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://theclaraai.com">
-    <link rel="stylesheet" href="styles.css?v=5.0">
+    <link rel="stylesheet" href="styles.css?v=6.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
-    <!-- Living gradient background -->
-    <canvas id="gradient-canvas" aria-hidden="true"></canvas>
-    <div class="grain" aria-hidden="true"></div>
 
     <!-- Navigation -->
     <nav class="nav" id="nav">
@@ -44,25 +41,25 @@
     <section class="hero">
         <div class="hero-inner">
             <div class="hero-content">
-                <div class="hero-badge" data-reveal>
+                <div class="hero-badge">
                     <span class="hero-badge-dot"></span>
                     AI Time Intelligence
                 </div>
 
                 <h1 class="hero-h1">
-                    <span class="hero-line" data-reveal data-delay="80">Your calendar is</span>
-                    <span class="hero-line" data-reveal data-delay="160">killing your energy.</span>
-                    <span class="hero-line hero-line-gradient" data-reveal data-delay="240">Clara fights back.</span>
+                    <span class="hero-line">Your calendar is</span>
+                    <span class="hero-line">killing your energy.</span>
+                    <span class="hero-line hero-line-accent">Clara fights back.</span>
                 </h1>
 
-                <p class="hero-sub" data-reveal data-delay="320">
+                <p class="hero-sub">
                     Clara reads your calendar and health data, diagnoses overload
                     before you feel it, tells you exactly what to decline, and
                     protects your best hours. All through conversation.
                 </p>
 
-                <div class="hero-actions" data-reveal data-delay="400">
-                    <a href="https://apps.apple.com/us/app/my-clara/id6756801463" class="btn btn-primary magnetic">
+                <div class="hero-actions">
+                    <a href="https://apps.apple.com/us/app/my-clara/id6756801463" class="btn btn-primary">
                         <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                         Download for iOS
                     </a>
@@ -73,49 +70,13 @@
                 </div>
             </div>
 
-            <div class="hero-device" data-reveal="scale" data-delay="200">
-                <div class="device-glow"></div>
-                <div class="device-frame">
-                    <div class="device-notch"></div>
-                    <div class="device-screen">
-                        <div class="screen-status-bar">
-                            <span>9:41</span>
-                            <span class="screen-indicators">
-                                <svg width="16" height="12" viewBox="0 0 16 12" fill="white"><rect x="0" y="3" width="3" height="9" rx="1" opacity=".3"/><rect x="4.5" y="2" width="3" height="10" rx="1" opacity=".5"/><rect x="9" y="0" width="3" height="12" rx="1" opacity=".8"/><rect x="13.5" y="0" width="2.5" height="12" rx="1"/></svg>
-                            </span>
+            <div class="hero-device">
+                <div class="device-placeholder">
+                    <div class="device-placeholder-inner">
+                        <div class="device-placeholder-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
                         </div>
-                        <div class="screen-app">
-                            <div class="app-card app-card-alert">
-                                <div class="app-card-header">
-                                    <span class="app-alert-dot"></span>
-                                    <span class="app-alert-label">OVERLOADED</span>
-                                    <span class="app-alert-value">127%</span>
-                                </div>
-                                <p class="app-card-body">
-                                    6 meetings today. 5.2 hours blocked. Your largest focus window is 45 minutes.
-                                    After 5.5h sleep, cognitive capacity is down about 20%.
-                                </p>
-                            </div>
-                            <div class="app-card app-card-action">
-                                <span class="app-action-label">Recommended</span>
-                                <span class="app-action-text">Decline 2pm Product Review</span>
-                                <span class="app-action-btn">Get decline message</span>
-                            </div>
-                            <div class="app-card app-card-metrics">
-                                <div class="app-metric">
-                                    <span class="app-metric-val">5.5h</span>
-                                    <span class="app-metric-lbl">Sleep</span>
-                                </div>
-                                <div class="app-metric">
-                                    <span class="app-metric-val">45m</span>
-                                    <span class="app-metric-lbl">Focus</span>
-                                </div>
-                                <div class="app-metric">
-                                    <span class="app-metric-val">6</span>
-                                    <span class="app-metric-lbl">Meetings</span>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="device-placeholder-text">App screenshot coming soon</span>
                     </div>
                 </div>
             </div>
@@ -125,18 +86,18 @@
     <!-- ==================== STATS ==================== -->
     <section class="stats" id="stats">
         <div class="stats-inner">
-            <div class="stat-item" data-reveal data-delay="0">
-                <span class="stat-num"><span data-count="77">0</span><span class="stat-unit">%</span></span>
+            <div class="stat-item reveal">
+                <span class="stat-num">77<span class="stat-unit">%</span></span>
                 <span class="stat-label">of workers have experienced burnout</span>
             </div>
             <div class="stat-sep"></div>
-            <div class="stat-item" data-reveal data-delay="100">
-                <span class="stat-num"><span class="stat-dollar">$</span><span data-count="322">0</span><span class="stat-unit">B</span></span>
+            <div class="stat-item reveal">
+                <span class="stat-num"><span class="stat-dollar">$</span>322<span class="stat-unit">B</span></span>
                 <span class="stat-label">lost to workplace burnout yearly</span>
             </div>
             <div class="stat-sep"></div>
-            <div class="stat-item" data-reveal data-delay="200">
-                <span class="stat-num"><span data-count="3">0</span><span class="stat-unit">x</span></span>
+            <div class="stat-item reveal">
+                <span class="stat-num">3<span class="stat-unit">x</span></span>
                 <span class="stat-label">more meetings since 2020</span>
             </div>
         </div>
@@ -145,29 +106,29 @@
     <!-- ==================== PROBLEM ==================== -->
     <section class="section" id="problem">
         <div class="container">
-            <span class="section-tag" data-reveal>The Problem</span>
-            <h2 class="section-h2" data-reveal data-delay="60">
+            <span class="section-tag reveal">The Problem</span>
+            <h2 class="section-h2 reveal">
                 Your calendar doesn't know<br>you're human.
             </h2>
-            <p class="section-sub" data-reveal data-delay="120">
+            <p class="section-sub reveal">
                 It doesn't know you slept 5 hours. It doesn't care about your 6
                 back-to-back meetings. It just keeps booking. You keep burning out.
             </p>
 
             <div class="problem-grid">
-                <div class="card card-problem" data-reveal data-delay="100">
+                <div class="card card-problem reveal">
                     <span class="card-num">01</span>
                     <h3>Meeting Overload</h3>
                     <p>Meetings have tripled since 2020. Your calendar keeps booking without asking if you can handle it.</p>
                     <div class="card-stat"><span class="card-stat-big">3x</span><span>more meetings</span></div>
                 </div>
-                <div class="card card-problem" data-reveal data-delay="180">
+                <div class="card card-problem reveal">
                     <span class="card-num">02</span>
                     <h3>Zero Recovery</h3>
                     <p>Back-to-back meetings cause stress to pile up. Your brain never gets a chance to reset.</p>
                     <div class="card-stat"><span class="card-stat-big">0</span><span>minutes to breathe</span></div>
                 </div>
-                <div class="card card-problem" data-reveal data-delay="260">
+                <div class="card card-problem reveal">
                     <span class="card-num">03</span>
                     <h3>Invisible Fatigue</h3>
                     <p>Poor sleep costs you 20-40% of your cognitive capacity. But your calendar can't see that.</p>
@@ -178,16 +139,16 @@
     </section>
 
     <!-- ==================== FEATURES BENTO ==================== -->
-    <section class="section" id="features">
+    <section class="section section-alt" id="features">
         <div class="container">
-            <span class="section-tag" data-reveal>Features</span>
-            <h2 class="section-h2" data-reveal data-delay="60">
-                Not a calendar.<br><span class="text-gradient">A decision engine.</span>
+            <span class="section-tag reveal">Features</span>
+            <h2 class="section-h2 reveal">
+                Not a calendar.<br><span class="text-accent">A decision engine.</span>
             </h2>
 
             <div class="bento">
                 <!-- Featured: Say No Engine -->
-                <div class="card bento-featured" data-reveal data-delay="80">
+                <div class="card bento-featured reveal">
                     <div class="bento-featured-inner">
                         <div class="bento-featured-content">
                             <span class="card-badge">Core Feature</span>
@@ -208,52 +169,52 @@
                 </div>
 
                 <!-- Health x Calendar -->
-                <div class="card bento-item" data-reveal data-delay="160">
-                    <div class="bento-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <div class="card bento-item reveal">
+                    <div class="bento-icon bento-icon-rose">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                     </div>
                     <h3>Health x Calendar</h3>
                     <p>Clara reads sleep, HRV, steps, and activity from Apple Health. Bad sleep? She adjusts your capacity and warns you before you crash.</p>
                 </div>
 
                 <!-- Morning Briefing -->
-                <div class="card bento-item" data-reveal data-delay="220">
-                    <div class="bento-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <div class="card bento-item reveal">
+                    <div class="bento-icon bento-icon-amber">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                     </div>
                     <h3>Morning Briefing</h3>
                     <p>Wake up to Clara's personalized summary. "6 meetings today, but I found a 90-minute focus window at 2pm. Protect it."</p>
                 </div>
 
                 <!-- Focus Protection -->
-                <div class="card bento-item" data-reveal data-delay="140">
-                    <div class="bento-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div class="card bento-item reveal">
+                    <div class="bento-icon bento-icon-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <h3>Focus Protection</h3>
                     <p>Clara finds your best deep work windows and blocks them. One tap to protect 2 hours of uninterrupted time.</p>
                 </div>
 
                 <!-- Weekly Insights -->
-                <div class="card bento-item" data-reveal data-delay="200">
-                    <div class="bento-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <div class="card bento-item reveal">
+                    <div class="bento-icon bento-icon-violet">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
                     </div>
                     <h3>Weekly Insights</h3>
                     <p>See patterns you can't see. Meeting load trends, energy distribution, work-life balance scores, and recommendations.</p>
                 </div>
 
                 <!-- Pattern Detection -->
-                <div class="card bento-item" data-reveal data-delay="260">
-                    <div class="bento-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <div class="card bento-item reveal">
+                    <div class="bento-icon bento-icon-cyan">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                     </div>
                     <h3>Pattern Detection</h3>
                     <p>Clara analyzes 30-60 days to reveal hidden patterns. Weekend work creep. Tuesday overload. Thursday energy dips.</p>
                 </div>
 
                 <!-- All Your Calendars (wide) -->
-                <div class="card bento-wide" data-reveal data-delay="180">
+                <div class="card bento-wide reveal">
                     <div class="bento-wide-inner">
                         <div>
                             <h3>All your calendars. One intelligent layer.</h3>
@@ -261,25 +222,25 @@
                         </div>
                         <div class="integration-logos">
                             <div class="int-logo">
-                                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                             </div>
                             <div class="int-logo">
-                                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#0078D4" d="M24 7.4v10.5c0 .45-.18.7-.53.7H14.3V10.3l4.7 2.9L24 10V7.4zM24 4.4v2.6l-5 3.2-4.7-2.9V4.4c0-.45.18-.7.53-.7h8.6c.35 0 .53.25.53.7zM14.3 7.3v11.3H1.85c-.5 0-.85-.35-.85-.85V5.4c0-.5.35-.85.85-.85h2.44v10.1c0 .56.31 1.05.78 1.31l9.22 5.33z"/></svg>
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#0078D4" d="M24 7.4v10.5c0 .45-.18.7-.53.7H14.3V10.3l4.7 2.9L24 10V7.4zM24 4.4v2.6l-5 3.2-4.7-2.9V4.4c0-.45.18-.7.53-.7h8.6c.35 0 .53.25.53.7zM14.3 7.3v11.3H1.85c-.5 0-.85-.35-.85-.85V5.4c0-.5.35-.85.85-.85h2.44v10.1c0 .56.31 1.05.78 1.31l9.22 5.33z"/></svg>
                             </div>
                             <div class="int-logo">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="#333"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                             </div>
                             <div class="int-logo">
-                                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#FF2D55" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#FF2D55" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Smart Tasks -->
-                <div class="card bento-item" data-reveal data-delay="240">
-                    <div class="bento-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                <div class="card bento-item reveal">
+                    <div class="bento-icon bento-icon-green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
                     </div>
                     <h3>Smart Tasks</h3>
                     <p>Clara prioritizes what to do first based on deadlines, energy, and context. "Do This First" shows your most important task.</p>
@@ -289,18 +250,18 @@
     </section>
 
     <!-- ==================== CLARA AI ==================== -->
-    <section class="section section-dark" id="clara-ai">
+    <section class="section" id="clara-ai">
         <div class="container">
-            <span class="section-tag tag-light" data-reveal>Your AI Assistant</span>
-            <h2 class="section-h2 text-white" data-reveal data-delay="60">
+            <span class="section-tag reveal">Your AI Assistant</span>
+            <h2 class="section-h2 reveal">
                 Meet Clara.
             </h2>
-            <p class="section-sub text-white-muted" data-reveal data-delay="120">
+            <p class="section-sub reveal">
                 Talk to Clara like a friend. She knows your calendar, your health,
                 your patterns. Ask her anything.
             </p>
 
-            <div class="chat-container" data-reveal data-delay="180">
+            <div class="chat-container reveal">
                 <div class="chat-window">
                     <div class="chat-head">
                         <div class="chat-avatar">C</div>
@@ -309,7 +270,7 @@
                             <span class="chat-online"><span class="chat-online-dot"></span>Online</span>
                         </div>
                     </div>
-                    <div class="chat-body" id="chatBody">
+                    <div class="chat-body">
                         <div class="chat-msg chat-msg-user">
                             <p>Should I take that 3pm meeting?</p>
                         </div>
@@ -331,7 +292,7 @@
                 </div>
             </div>
 
-            <div class="clara-caps" data-reveal data-delay="240">
+            <div class="clara-caps reveal">
                 <div class="clara-cap"><span>Calendar</span></div>
                 <div class="clara-cap"><span>Health</span></div>
                 <div class="clara-cap"><span>Tasks</span></div>
@@ -342,15 +303,15 @@
     </section>
 
     <!-- ==================== COMPARISON ==================== -->
-    <section class="section">
+    <section class="section section-alt">
         <div class="container">
-            <span class="section-tag" data-reveal>The Difference</span>
-            <h2 class="section-h2" data-reveal data-delay="60">
-                Clara doesn't observe.<br><span class="text-gradient">She prescribes.</span>
+            <span class="section-tag reveal">The Difference</span>
+            <h2 class="section-h2 reveal">
+                Clara doesn't observe.<br><span class="text-accent">She prescribes.</span>
             </h2>
 
             <div class="compare-grid">
-                <div class="card card-compare card-compare-other" data-reveal data-delay="100">
+                <div class="card card-compare card-compare-other reveal">
                     <span class="compare-label">Other apps</span>
                     <div class="compare-quotes">
                         <p>"You have 6 meetings today."</p>
@@ -359,7 +320,7 @@
                     </div>
                     <span class="compare-verdict">Observational. Passive. Unhelpful.</span>
                 </div>
-                <div class="card card-compare card-compare-clara" data-reveal data-delay="200">
+                <div class="card card-compare card-compare-clara reveal">
                     <span class="compare-label">Clara</span>
                     <div class="compare-quotes">
                         <p>"You are 127% over capacity."</p>
@@ -375,28 +336,28 @@
     <!-- ==================== SCIENCE ==================== -->
     <section class="section" id="science">
         <div class="container">
-            <span class="section-tag" data-reveal>The Research</span>
-            <h2 class="section-h2" data-reveal data-delay="60">
+            <span class="section-tag reveal">The Research</span>
+            <h2 class="section-h2 reveal">
                 Built on science,<br>not opinions.
             </h2>
 
             <div class="research-grid">
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0749379925000236" target="_blank" rel="noopener" class="card card-research" data-reveal data-delay="80">
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0749379925000236" target="_blank" rel="noopener" class="card card-research reveal">
                     <span class="research-num">$322B</span>
                     <span class="research-title">Annual cost of burnout</span>
                     <span class="research-src">American Journal of Preventive Medicine, 2025</span>
                 </a>
-                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2656292/" target="_blank" rel="noopener" class="card card-research" data-reveal data-delay="140">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2656292/" target="_blank" rel="noopener" class="card card-research reveal">
                     <span class="research-num">20-40%</span>
                     <span class="research-title">Cognitive decline from sleep deprivation</span>
                     <span class="research-src">PMC Sleep & Cognition</span>
                 </a>
-                <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/brain-research" target="_blank" rel="noopener" class="card card-research" data-reveal data-delay="200">
+                <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/brain-research" target="_blank" rel="noopener" class="card card-research reveal">
                     <span class="research-num">+Stress</span>
                     <span class="research-title">Back-to-back meetings accumulate stress</span>
                     <span class="research-src">Microsoft Human Factors Lab</span>
                 </a>
-                <a href="https://hbr.org/2021/11/the-psychology-behind-meeting-overload" target="_blank" rel="noopener" class="card card-research" data-reveal data-delay="260">
+                <a href="https://hbr.org/2021/11/the-psychology-behind-meeting-overload" target="_blank" rel="noopener" class="card card-research reveal">
                     <span class="research-num">40%</span>
                     <span class="research-title">Productivity lost to task-switching</span>
                     <span class="research-src">Harvard Business Review</span>
@@ -406,15 +367,15 @@
     </section>
 
     <!-- ==================== HOW IT WORKS ==================== -->
-    <section class="section">
+    <section class="section section-alt">
         <div class="container container-narrow">
-            <span class="section-tag" data-reveal>How It Works</span>
-            <h2 class="section-h2" data-reveal data-delay="60">
+            <span class="section-tag reveal">How It Works</span>
+            <h2 class="section-h2 reveal">
                 60 seconds to protection.
             </h2>
 
             <div class="steps">
-                <div class="step" data-reveal data-delay="100">
+                <div class="step reveal">
                     <div class="step-num">1</div>
                     <div class="step-body">
                         <h3>Download</h3>
@@ -422,7 +383,7 @@
                     </div>
                 </div>
                 <div class="step-connector"></div>
-                <div class="step" data-reveal data-delay="200">
+                <div class="step reveal">
                     <div class="step-num">2</div>
                     <div class="step-body">
                         <h3>Connect</h3>
@@ -430,7 +391,7 @@
                     </div>
                 </div>
                 <div class="step-connector"></div>
-                <div class="step" data-reveal data-delay="300">
+                <div class="step reveal">
                     <div class="step-num">3</div>
                     <div class="step-body">
                         <h3>Protected</h3>
@@ -444,7 +405,7 @@
     <!-- ==================== MISSION ==================== -->
     <section class="section">
         <div class="container container-narrow">
-            <div class="mission" data-reveal>
+            <div class="mission reveal">
                 <h2>You are not a machine.</h2>
                 <p>
                     Most productivity tools optimize you for output. More meetings. More tasks.
@@ -465,12 +426,11 @@
 
     <!-- ==================== CTA ==================== -->
     <section class="cta">
-        <div class="cta-glow"></div>
         <div class="container">
-            <div class="cta-inner" data-reveal>
+            <div class="cta-inner reveal">
                 <h2>Take back your time.</h2>
                 <p>Join thousands who stopped surviving their calendars.</p>
-                <a href="https://apps.apple.com/us/app/my-clara/id6756801463" class="btn btn-primary btn-lg magnetic">
+                <a href="https://apps.apple.com/us/app/my-clara/id6756801463" class="btn btn-primary btn-lg">
                     <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                     Download Free for iOS
                 </a>
@@ -522,76 +482,17 @@
 
     <script>
     (() => {
-        /* ===== CANVAS MESH GRADIENT ===== */
-        const canvas = document.getElementById('gradient-canvas');
-        const ctx = canvas.getContext('2d');
-        let W, H, mx = 0.5, my = 0.5, frame = 0;
-        const blobs = [
-            { x: 0.25, y: 0.15, r: 0.35, sx: 0.4, sy: 0.3, color: [99,102,241] },
-            { x: 0.75, y: 0.25, r: 0.3,  sx: 0.3, sy: 0.5, color: [139,92,246] },
-            { x: 0.5,  y: 0.6,  r: 0.35, sx: 0.5, sy: 0.4, color: [6,182,212] },
-            { x: 0.2,  y: 0.8,  r: 0.25, sx: 0.6, sy: 0.35,color: [236,72,153] },
-            { x: 0.8,  y: 0.7,  r: 0.28, sx: 0.35,sy: 0.6, color: [59,130,246] },
-        ];
-
-        function resize() {
-            W = canvas.width = window.innerWidth;
-            H = canvas.height = window.innerHeight;
-        }
-
-        function drawGradient() {
-            ctx.clearRect(0, 0, W, H);
-            const t = frame * 0.003;
-            blobs.forEach(b => {
-                const bx = (b.x + Math.sin(t * b.sx + b.sy) * 0.15) * W;
-                const by = (b.y + Math.cos(t * b.sy + b.sx) * 0.12) * H;
-                const radius = b.r * Math.max(W, H);
-                const grad = ctx.createRadialGradient(bx, by, 0, bx, by, radius);
-                grad.addColorStop(0, `rgba(${b.color[0]},${b.color[1]},${b.color[2]},0.18)`);
-                grad.addColorStop(1, `rgba(${b.color[0]},${b.color[1]},${b.color[2]},0)`);
-                ctx.fillStyle = grad;
-                ctx.fillRect(0, 0, W, H);
-            });
-            frame++;
-            requestAnimationFrame(drawGradient);
-        }
-
-        resize();
-        window.addEventListener('resize', resize);
-        drawGradient();
-
         /* ===== SCROLL REVEAL ===== */
-        const revealEls = document.querySelectorAll('[data-reveal]');
+        const revealEls = document.querySelectorAll('.reveal');
         const revealObs = new IntersectionObserver((entries) => {
             entries.forEach(e => {
                 if (e.isIntersecting) {
-                    const d = parseInt(e.target.dataset.delay || 0);
-                    setTimeout(() => e.target.classList.add('revealed'), d);
+                    e.target.classList.add('revealed');
                     revealObs.unobserve(e.target);
                 }
             });
-        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
         revealEls.forEach(el => revealObs.observe(el));
-
-        /* ===== COUNTER ===== */
-        const countEls = document.querySelectorAll('[data-count]');
-        const countObs = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (!e.isIntersecting) return;
-                const el = e.target;
-                const to = parseInt(el.dataset.count);
-                const dur = 2200;
-                const t0 = performance.now();
-                (function tick(now) {
-                    const p = Math.min((now - t0) / dur, 1);
-                    const ease = 1 - Math.pow(1 - p, 4);
-                    el.textContent = Math.round(to * ease);
-                    if (p < 1) requestAnimationFrame(tick);
-                })(t0);
-                countObs.unobserve(el);
-            });
-        }, { threshold: 0.5 });
-        countEls.forEach(el => countObs.observe(el));
 
         /* ===== NAVBAR ===== */
         const nav = document.getElementById('nav');
@@ -611,60 +512,6 @@
                 if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
-
-        /* ===== MAGNETIC BUTTONS ===== */
-        document.querySelectorAll('.magnetic').forEach(btn => {
-            btn.addEventListener('mousemove', e => {
-                const r = btn.getBoundingClientRect();
-                const dx = e.clientX - r.left - r.width / 2;
-                const dy = e.clientY - r.top - r.height / 2;
-                btn.style.transform = `translate(${dx * 0.12}px, ${dy * 0.12}px)`;
-            });
-            btn.addEventListener('mouseleave', () => {
-                btn.style.transition = 'transform 0.4s cubic-bezier(0.16,1,0.3,1)';
-                btn.style.transform = '';
-                setTimeout(() => btn.style.transition = '', 400);
-            });
-        });
-
-        /* ===== CHAT ANIMATION ===== */
-        const chatBody = document.getElementById('chatBody');
-        if (chatBody) {
-            const chatObs = new IntersectionObserver((entries) => {
-                entries.forEach(e => {
-                    if (e.isIntersecting) {
-                        const msgs = chatBody.querySelectorAll('.chat-msg');
-                        msgs.forEach((m, i) => setTimeout(() => m.classList.add('chat-msg-show'), i * 500));
-                        chatObs.unobserve(chatBody);
-                    }
-                });
-            }, { threshold: 0.25 });
-            chatObs.observe(chatBody);
-        }
-
-        /* ===== CARD TILT ===== */
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('mousemove', e => {
-                const r = card.getBoundingClientRect();
-                const x = (e.clientX - r.left) / r.width - 0.5;
-                const y = (e.clientY - r.top) / r.height - 0.5;
-                card.style.setProperty('--rx', `${-y * 6}deg`);
-                card.style.setProperty('--ry', `${x * 6}deg`);
-                card.style.setProperty('--glow-x', `${(x + 0.5) * 100}%`);
-                card.style.setProperty('--glow-y', `${(y + 0.5) * 100}%`);
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.setProperty('--rx', '0deg');
-                card.style.setProperty('--ry', '0deg');
-            });
-        });
-
-        /* ===== PARALLAX HERO ===== */
-        const heroDevice = document.querySelector('.hero-device');
-        window.addEventListener('scroll', () => {
-            if (!heroDevice || window.scrollY > 900) return;
-            heroDevice.style.transform = `translateY(${window.scrollY * 0.08}px)`;
-        }, { passive: true });
     })();
     </script>
 </body>
